@@ -1,0 +1,1 @@
+../../../MingKeMing/Classes/bitcoin/src/base58.h

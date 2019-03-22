@@ -6,7 +6,7 @@
 //  Copyright © 2018 DIM Group. All rights reserved.
 //
 
-#import "NSDate+Timestamp.h"
+#import "NSDate+MKM_Timestamp.h"
 
 #import "DIMCAValidity.h"
 
@@ -27,8 +27,8 @@
 
 - (instancetype)initWithNotBefore:(const NSDate *)from
                          notAfter:(const NSDate *)to {
-    NSDictionary *dict = @{@"NotBefore":NSNumberFromDate(from),
-                           @"NotAfter" :NSNumberFromDate(to),
+    NSDictionary *dict = @{@"NotBefore":MKM_NSNumberFromDate(from),
+                           @"NotAfter" :MKM_NSNumberFromDate(to),
                            };
     if (self = [super initWithDictionary:dict]) {
         _notBefore = [from copy];
@@ -50,7 +50,7 @@
     if (!_notBefore) {
         NSNumber *timestamp = [_storeDictionary objectForKey:@"NotBefore"];
         NSAssert(timestamp, @"error: %@", _storeDictionary);
-        _notBefore = NSDateFromNumber(timestamp);
+        _notBefore = MKM_NSDateFromNumber(timestamp);
     }
     return _notBefore;
 }
@@ -59,7 +59,7 @@
     if (!_notAfter) {
         NSNumber *timestamp = [_storeDictionary objectForKey:@"NotAfter"];
         NSAssert(timestamp, @"error: %@", _storeDictionary);
-        _notAfter = NSDateFromNumber(timestamp);
+        _notAfter = MKM_NSDateFromNumber(timestamp);
     }
     return _notAfter;
 }

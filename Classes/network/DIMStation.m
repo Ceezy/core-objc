@@ -6,8 +6,8 @@
 //  Copyright © 2018 DIM Group. All rights reserved.
 //
 
-#import "NSObject+Compare.h"
-#import "NSObject+JsON.h"
+#import "NSObject+MKM_Compare.h"
+#import "NSObject+MKM_JSON.h"
 
 #import "DIMServiceProvider.h"
 
@@ -108,12 +108,12 @@
 
 - (NSString *)debugDescription {
     NSString *desc = [super debugDescription];
-    NSData *data = [desc data];
-    NSDictionary *dict = [data jsonDictionary];
+    NSData *data = [desc mkm_data];
+    NSDictionary *dict = [data mkm_jsonDictionary];
     NSMutableDictionary *mDict = [dict mutableCopy];
     [mDict setObject:self.host forKey:@"host"];
     [mDict setObject:@(self.port) forKey:@"port"];
-    return [mDict jsonString];
+    return [mDict mkm_jsonString];
 }
 
 - (BOOL)isEqual:(id)object {

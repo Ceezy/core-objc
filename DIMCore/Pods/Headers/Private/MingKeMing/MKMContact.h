@@ -1,0 +1,1 @@
+../../../MingKeMing/Classes/entity/MKMContact.h

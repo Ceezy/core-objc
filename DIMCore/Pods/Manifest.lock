@@ -1,0 +1,50 @@
+PODS:
+  - DaoKeDao (0.0.2):
+    - DaoKeDao/extends (= 0.0.2)
+    - DaoKeDao/message (= 0.0.2)
+    - DaoKeDao/types (= 0.0.2)
+  - DaoKeDao/extends (0.0.2)
+  - DaoKeDao/message (0.0.2):
+    - DaoKeDao/extends
+    - DaoKeDao/types
+  - DaoKeDao/types (0.0.2):
+    - DaoKeDao/extends
+  - MingKeMing (0.0.2):
+    - MingKeMing/bitcoin (= 0.0.2)
+    - MingKeMing/crypto (= 0.0.2)
+    - MingKeMing/entity (= 0.0.2)
+    - MingKeMing/extends (= 0.0.2)
+    - MingKeMing/group (= 0.0.2)
+    - MingKeMing/types (= 0.0.2)
+  - MingKeMing/bitcoin (0.0.2)
+  - MingKeMing/crypto (0.0.2):
+    - MingKeMing/extends
+    - MingKeMing/types
+  - MingKeMing/entity (0.0.2):
+    - MingKeMing/crypto
+    - MingKeMing/extends
+    - MingKeMing/types
+  - MingKeMing/extends (0.0.2):
+    - MingKeMing/bitcoin
+  - MingKeMing/group (0.0.2):
+    - MingKeMing/crypto
+    - MingKeMing/entity
+  - MingKeMing/types (0.0.2):
+    - MingKeMing/extends
+
+DEPENDENCIES:
+  - DaoKeDao
+  - MingKeMing
+
+SPEC REPOS:
+  https://github.com/Ceezy/dim-specs.git:
+    - DaoKeDao
+    - MingKeMing
+
+SPEC CHECKSUMS:
+  DaoKeDao: 62a3eeacab7285d0715c5a5898d04ed4640a2f84
+  MingKeMing: 7e731c51b4f59bd09015ec7a521700ef1cf5342d
+
+PODFILE CHECKSUM: 72ecc0f4b910a142b61db5386ebc7f80c21b1b28
+
+COCOAPODS: 1.5.3

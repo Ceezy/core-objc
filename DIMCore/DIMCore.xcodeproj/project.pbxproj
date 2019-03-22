@@ -11,7 +11,6 @@
 		E95A80C72205FCD4007EA611 /* DIMGroupCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = E95A80C52205FCD4007EA611 /* DIMGroupCommand.m */; };
 		E95A80CB22060142007EA611 /* DIMProfileCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = E95A80C922060142007EA611 /* DIMProfileCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E95A80CC22060142007EA611 /* DIMProfileCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = E95A80CA22060142007EA611 /* DIMProfileCommand.m */; };
-		E9BBBD2B223A479E00E6ACDA /* MingKeMing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BBBD28223A479800E6ACDA /* MingKeMing.framework */; };
 		E9BBBD45223AA13500E6ACDA /* DIMKeyStore+CacheFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BBBD3F223AA13400E6ACDA /* DIMKeyStore+CacheFile.m */; };
 		E9BBBD46223AA13500E6ACDA /* DIMKeyStore+CacheFile.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BBBD40223AA13400E6ACDA /* DIMKeyStore+CacheFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9BBBD47223AA13500E6ACDA /* DIMKeyStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BBBD41223AA13500E6ACDA /* DIMKeyStore.m */; };
@@ -75,31 +74,10 @@
 		E9F3AA8021CBD03C009690F6 /* DIMConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F3AA6B21CBD03C009690F6 /* DIMConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9F3AA8321CBD03C009690F6 /* DIMAmanuensis.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F3AA6E21CBD03C009690F6 /* DIMAmanuensis.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9F3AA9C21CC0157009690F6 /* dimMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F3AA9B21CC00B6009690F6 /* dimMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9F3AB9E21D07803009690F6 /* DaoKeDao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F3AB9921D077D3009690F6 /* DaoKeDao.framework */; };
+		F88017209F68AF27CDB54D16 /* libPods-DIMCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECFCE0F569764B40D1CA689 /* libPods-DIMCore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E9BBBD27223A479800E6ACDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9BBBD21223A479800E6ACDA /* MingKeMing.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9F3A69A21CA4627009690F6;
-			remoteInfo = MingKeMing;
-		};
-		E9BBBD29223A479800E6ACDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9BBBD21223A479800E6ACDA /* MingKeMing.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9F3A6A321CA4627009690F6;
-			remoteInfo = MingKeMingTests;
-		};
-		E9BBBD2C223A47AA00E6ACDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9BBBD21223A479800E6ACDA /* MingKeMing.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E9F3A69921CA4627009690F6;
-			remoteInfo = MingKeMing;
-		};
 		E9F3AA4721CBD02C009690F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E9F3AA3321CBD02C009690F6 /* Project object */;
@@ -107,35 +85,17 @@
 			remoteGlobalIDString = E9F3AA3B21CBD02C009690F6;
 			remoteInfo = DIMCore;
 		};
-		E9F3AB9821D077D3009690F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9F3AB9221D077D2009690F6 /* DaoKeDao.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9F3A9B121CBC160009690F6;
-			remoteInfo = DaoKeDao;
-		};
-		E9F3AB9A21D077D3009690F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9F3AB9221D077D2009690F6 /* DaoKeDao.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9F3A9BA21CBC160009690F6;
-			remoteInfo = DaoKeDaoTests;
-		};
-		E9F3AC2F21D23A10009690F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9F3AB9221D077D2009690F6 /* DaoKeDao.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E9F3A9B021CBC160009690F6;
-			remoteInfo = DaoKeDao;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0ECFCE0F569764B40D1CA689 /* libPods-DIMCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DIMCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		775065562244D8D700DC2FFB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		878A10423DA92FF8C802DD05 /* Pods-DIMCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DIMCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DIMCore/Pods-DIMCore.debug.xcconfig"; sourceTree = "<group>"; };
+		A9FADB3EA8A319D8C3B2F4E3 /* Pods-DIMCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DIMCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-DIMCore/Pods-DIMCore.release.xcconfig"; sourceTree = "<group>"; };
 		E95A80C42205FCD4007EA611 /* DIMGroupCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIMGroupCommand.h; sourceTree = "<group>"; };
 		E95A80C52205FCD4007EA611 /* DIMGroupCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIMGroupCommand.m; sourceTree = "<group>"; };
 		E95A80C922060142007EA611 /* DIMProfileCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIMProfileCommand.h; sourceTree = "<group>"; };
 		E95A80CA22060142007EA611 /* DIMProfileCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIMProfileCommand.m; sourceTree = "<group>"; };
-		E9BBBD21223A479800E6ACDA /* MingKeMing.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MingKeMing.xcodeproj; path = "../../mkm-objc/MingKeMing/MingKeMing.xcodeproj"; sourceTree = "<group>"; };
 		E9BBBD3F223AA13400E6ACDA /* DIMKeyStore+CacheFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DIMKeyStore+CacheFile.m"; sourceTree = "<group>"; };
 		E9BBBD40223AA13400E6ACDA /* DIMKeyStore+CacheFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DIMKeyStore+CacheFile.h"; sourceTree = "<group>"; };
 		E9BBBD41223AA13500E6ACDA /* DIMKeyStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIMKeyStore.m; sourceTree = "<group>"; };
@@ -202,7 +162,6 @@
 		E9F3AA6B21CBD03C009690F6 /* DIMConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIMConversation.h; sourceTree = "<group>"; };
 		E9F3AA6E21CBD03C009690F6 /* DIMAmanuensis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIMAmanuensis.h; sourceTree = "<group>"; };
 		E9F3AA9B21CC00B6009690F6 /* dimMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dimMacros.h; sourceTree = "<group>"; };
-		E9F3AB9221D077D2009690F6 /* DaoKeDao.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DaoKeDao.xcodeproj; path = "../../dkd-objc/DaoKeDao/DaoKeDao.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,8 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9BBBD2B223A479E00E6ACDA /* MingKeMing.framework in Frameworks */,
-				E9F3AB9E21D07803009690F6 /* DaoKeDao.framework in Frameworks */,
+				F88017209F68AF27CDB54D16 /* libPods-DIMCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,15 +184,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E9BBBD22223A479800E6ACDA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E9BBBD28223A479800E6ACDA /* MingKeMing.framework */,
-				E9BBBD2A223A479800E6ACDA /* MingKeMingTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		E9BBBDA4223AB42D00E6ACDA /* history */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,13 +241,12 @@
 		E9F3AA3221CBD02C009690F6 = {
 			isa = PBXGroup;
 			children = (
-				E9BBBD21223A479800E6ACDA /* MingKeMing.xcodeproj */,
-				E9F3AB9221D077D2009690F6 /* DaoKeDao.xcodeproj */,
 				E9F3AA5821CBD03C009690F6 /* Classes */,
 				E9F3AA3E21CBD02C009690F6 /* DIMCore */,
 				E9F3AA4921CBD02C009690F6 /* DIMCoreTests */,
 				E9F3AA3D21CBD02C009690F6 /* Products */,
 				E9F3AA9621CBD1E5009690F6 /* Frameworks */,
+				F8C9A146F6CB2A1445AB1764 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -390,17 +338,19 @@
 		E9F3AA9621CBD1E5009690F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				775065562244D8D700DC2FFB /* libc++.tbd */,
+				0ECFCE0F569764B40D1CA689 /* libPods-DIMCore.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E9F3AB9321D077D2009690F6 /* Products */ = {
+		F8C9A146F6CB2A1445AB1764 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E9F3AB9921D077D3009690F6 /* DaoKeDao.framework */,
-				E9F3AB9B21D077D3009690F6 /* DaoKeDaoTests.xctest */,
+				878A10423DA92FF8C802DD05 /* Pods-DIMCore.debug.xcconfig */,
+				A9FADB3EA8A319D8C3B2F4E3 /* Pods-DIMCore.release.xcconfig */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,6 +404,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9F3AA5021CBD02C009690F6 /* Build configuration list for PBXNativeTarget "DIMCore" */;
 			buildPhases = (
+				18DD16E99B39780B4AA52AC9 /* [CP] Check Pods Manifest.lock */,
 				E9F3AA3721CBD02C009690F6 /* Headers */,
 				E9F3AA3821CBD02C009690F6 /* Sources */,
 				E9F3AA3921CBD02C009690F6 /* Frameworks */,
@@ -462,8 +413,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E9BBBD2D223A47AA00E6ACDA /* PBXTargetDependency */,
-				E9F3AC3021D23A10009690F6 /* PBXTargetDependency */,
 			);
 			name = DIMCore;
 			productName = DIMCore;
@@ -515,16 +464,6 @@
 			mainGroup = E9F3AA3221CBD02C009690F6;
 			productRefGroup = E9F3AA3D21CBD02C009690F6 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E9F3AB9321D077D2009690F6 /* Products */;
-					ProjectRef = E9F3AB9221D077D2009690F6 /* DaoKeDao.xcodeproj */;
-				},
-				{
-					ProductGroup = E9BBBD22223A479800E6ACDA /* Products */;
-					ProjectRef = E9BBBD21223A479800E6ACDA /* MingKeMing.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				E9F3AA3B21CBD02C009690F6 /* DIMCore */,
@@ -532,37 +471,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		E9BBBD28223A479800E6ACDA /* MingKeMing.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MingKeMing.framework;
-			remoteRef = E9BBBD27223A479800E6ACDA /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E9BBBD2A223A479800E6ACDA /* MingKeMingTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MingKeMingTests.xctest;
-			remoteRef = E9BBBD29223A479800E6ACDA /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E9F3AB9921D077D3009690F6 /* DaoKeDao.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = DaoKeDao.framework;
-			remoteRef = E9F3AB9821D077D3009690F6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E9F3AB9B21D077D3009690F6 /* DaoKeDaoTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DaoKeDaoTests.xctest;
-			remoteRef = E9F3AB9A21D077D3009690F6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E9F3AA3A21CBD02C009690F6 /* Resources */ = {
@@ -580,6 +488,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18DD16E99B39780B4AA52AC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DIMCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9F3AA3821CBD02C009690F6 /* Sources */ = {
@@ -631,20 +564,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E9BBBD2D223A47AA00E6ACDA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MingKeMing;
-			targetProxy = E9BBBD2C223A47AA00E6ACDA /* PBXContainerItemProxy */;
-		};
 		E9F3AA4821CBD02C009690F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E9F3AA3B21CBD02C009690F6 /* DIMCore */;
 			targetProxy = E9F3AA4721CBD02C009690F6 /* PBXContainerItemProxy */;
-		};
-		E9F3AC3021D23A10009690F6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DaoKeDao;
-			targetProxy = E9F3AC2F21D23A10009690F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -771,6 +694,7 @@
 		};
 		E9F3AA5121CBD02C009690F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 878A10423DA92FF8C802DD05 /* Pods-DIMCore.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -779,10 +703,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"../../dkd-objc/Classes/**",
-					"../../mkm-objc/Classes/**",
-				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = DIMCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -800,6 +721,7 @@
 		};
 		E9F3AA5221CBD02C009690F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9FADB3EA8A319D8C3B2F4E3 /* Pods-DIMCore.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -808,10 +730,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = (
-					"../../dkd-objc/Classes/**",
-					"../../mkm-objc/Classes/**",
-				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = DIMCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

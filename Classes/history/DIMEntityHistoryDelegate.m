@@ -6,8 +6,8 @@
 //  Copyright © 2018 DIM Group. All rights reserved.
 //
 
-#import "NSObject+JsON.h"
-#import "NSData+Crypto.h"
+#import "NSObject+MKM_JSON.h"
+#import "NSData+MKM_Crypto.h"
 
 #import "DIMHistoryOperation.h"
 #import "DIMHistoryTransaction.h"
@@ -63,7 +63,7 @@
         data = [op data];
     } else {
         NSAssert(false, @"operation error");
-        data = [op jsonData];
+        data = [op mkm_jsonData];
     }
     
     // signature

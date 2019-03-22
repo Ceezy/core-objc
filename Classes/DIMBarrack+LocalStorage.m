@@ -6,7 +6,7 @@
 //  Copyright © 2018 DIM Group. All rights reserved.
 //
 
-#import "NSDictionary+Binary.h"
+#import "NSDictionary+MKM_Binary.h"
 
 #import "DIMBarrack+LocalStorage.h"
 
@@ -73,7 +73,7 @@ static NSString *s_directory = nil;
         NSLog(@"meta file already exists: %@, IGNORE!", path);
         return YES;
     }
-    return [meta writeToBinaryFile:path];
+    return [meta mkm_writeToBinaryFile:path];
 }
 
 @end

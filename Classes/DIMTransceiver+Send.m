@@ -6,7 +6,7 @@
 //  Copyright © 2019 DIM Group. All rights reserved.
 //
 
-#import "NSObject+JsON.h"
+#import "NSObject+MKM_JSON.h"
 
 #import "DIMBarrack+LocalStorage.h"
 #import "DIMTransceiver+Transform.h"
@@ -66,7 +66,7 @@
 
 - (BOOL)sendReliableMessage:(DIMReliableMessage *)rMsg
                    callback:(DIMTransceiverCallback)callback {
-    NSData *data = [rMsg jsonData];
+    NSData *data = [rMsg mkm_jsonData];
     if (data) {
         NSAssert(_delegate, @"transceiver delegate not set");
         return [_delegate sendPackage:data

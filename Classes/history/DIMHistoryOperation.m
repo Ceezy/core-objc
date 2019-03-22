@@ -6,8 +6,8 @@
 //  Copyright © 2018 DIM Group. All rights reserved.
 //
 
-#import "NSData+Crypto.h"
-#import "NSString+Crypto.h"
+#import "NSData+MKM_Crypto.h"
+#import "NSString+MKM_Decode.h"
 
 #import "DIMHistoryOperation.h"
 
@@ -98,7 +98,7 @@
     if (self = [self initWithCommand:command time:time]) {
         // previous signature
         if (prevSign) {
-            NSString *CT = [prevSign base64Encode];
+            NSString *CT = [prevSign mkm_base64Encode];
             [_storeDictionary setObject:CT forKey:@"prevSign"];
         }
     }
@@ -111,7 +111,7 @@
         CT = [_storeDictionary objectForKey:@"prevSign"];
         NSAssert(CT, @"previous signature cannot be empty in link command");
     }
-    return [CT base64Decode];
+    return [CT mkm_base64Decode];
 }
 
 @end

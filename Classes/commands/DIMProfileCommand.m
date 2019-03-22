@@ -6,9 +6,9 @@
 //  Copyright © 2019 DIM Group. All rights reserved.
 //
 
-#import "NSObject+JsON.h"
-#import "NSData+Crypto.h"
-#import "NSString+Crypto.h"
+#import "NSObject+MKM_JSON.h"
+#import "NSData+MKM_Crypto.h"
+#import "NSString+MKM_Decode.h"
 
 #import "DIMBarrack.h"
 
@@ -66,10 +66,10 @@
                       meta:(nullable const DIMMeta *)meta
                 privateKey:(const DIMPrivateKey *)SK
                    profile:(const DIMProfile *)profile {
-    NSString *json = [profile jsonString];
-    NSData *data = [json data];
+    NSString *json = [profile mkm_jsonString];
+    NSData *data = [json mkm_data];
     NSData *signature = [SK sign:data];
-    NSString *string = [signature base64Encode];
+    NSString *string = [signature mkm_base64Encode];
     return [self initWithID:ID meta:meta profile:json signature:string];
 }
 
@@ -87,7 +87,7 @@
         NSString *json = [_storeDictionary objectForKey:@"profile"];
         NSData *signature = [self signature];
         if (json && signature) {
-            NSData *data = [json data];
+            NSData *data = [json mkm_data];
             DIMPublicKey *PK = DIMPublicKeyForID(self.ID);
             if ([PK verify:data withSignature:signature]) {
                 _profile = [DIMProfile profileWithProfile:json];
@@ -100,7 +100,7 @@
 - (nullable NSData *)signature {
     if (!_signature) {
         NSString *base64 = [_storeDictionary objectForKey:@"signature"];
-        _signature = [base64 base64Decode];
+        _signature = [base64 mkm_base64Decode];
     }
     return _signature;
 }

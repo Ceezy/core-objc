@@ -6,7 +6,7 @@
 //  Copyright © 2019 DIM Group. All rights reserved.
 //
 
-#import "NSDictionary+Binary.h"
+#import "NSDictionary+MKM_Binary.h"
 
 #import "DIMKeyStore+CacheFile.h"
 
@@ -76,7 +76,7 @@ static NSString *s_directory = nil;
     }
     self.dirty = NO;
     NSString *path = [self _pathWithID:ID filename:DIM_KEYSTORE_FILENAME];
-    return [self.KeyTable writeToBinaryFile:path];
+    return [self.KeyTable mkm_writeToBinaryFile:path];
 }
 
 - (BOOL)reload {

@@ -6,9 +6,9 @@
 //  Copyright © 2018 DIM Group. All rights reserved.
 //
 
-#import "NSObject+JsON.h"
-#import "NSData+Crypto.h"
-#import "NSString+Crypto.h"
+#import "NSObject+MKM_JSON.h"
+#import "NSData+MKM_Crypto.h"
+#import "NSString+MKM_Decode.h"
 
 #import "DIMCAData.h"
 
@@ -63,7 +63,7 @@
 
 - (void)setInfo:(DIMCAData *)info {
     if (info) {
-        NSString *json = [info jsonString];
+        NSString *json = [info mkm_jsonString];
         [_storeDictionary setObject:json forKey:@"Info"];
     } else {
         [_storeDictionary removeObjectForKey:@"Info"];
@@ -74,12 +74,12 @@
 
 - (NSData *)signature {
     NSString *encode = [_storeDictionary objectForKey:@"Signature"];
-    return [encode base64Decode];
+    return [encode mkm_base64Decode];
 }
 
 - (void)setSignature:(NSData *)signature {
     if (signature) {
-        NSString *encode = [signature base64Encode];
+        NSString *encode = [signature mkm_base64Encode];
         [_storeDictionary setObject:encode forKey:@"Signature"];
     } else {
         [_storeDictionary removeObjectForKey:@"Signature"];
@@ -108,7 +108,7 @@
 
 - (BOOL)verifyWithPublicKey:(const DIMPublicKey *)PK {
     NSString *json = [_storeDictionary objectForKey:@"Info"];
-    return [PK verify:[json data] withSignature:self.signature];
+    return [PK verify:[json mkm_data] withSignature:self.signature];
 }
 
 @end

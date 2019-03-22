@@ -6,8 +6,8 @@
 //  Copyright © 2018 DIM Group. All rights reserved.
 //
 
-#import "NSData+Crypto.h"
-#import "NSString+Crypto.h"
+#import "NSData+MKM_Crypto.h"
+#import "NSString+MKM_Decode.h"
 
 #import "DIMHistoryOperation.h"
 
@@ -71,7 +71,7 @@ typedef NSMutableDictionary<const DIMAddress *, NSString *> DIMConfirmTableM;
     NSAssert(CT, @"signature cannot be empty");
     NSDictionary *dict = @{@"operation":operation,
                            @"commander":ID,
-                           @"signature":[CT base64Encode],
+                           @"signature":[CT mkm_base64Encode],
                            };
     if (self = [super initWithDictionary:dict]) {
         _operation = [DIMHistoryOperation operationWithOperation:operation];
@@ -114,7 +114,7 @@ typedef NSMutableDictionary<const DIMAddress *, NSString *> DIMConfirmTableM;
     if (!_signature) {
         NSString *CT = [_storeDictionary objectForKey:@"signature"];
         if (CT) {
-            _signature = [CT base64Decode];
+            _signature = [CT mkm_base64Decode];
         }
     }
     return _signature;
@@ -139,7 +139,7 @@ typedef NSMutableDictionary<const DIMAddress *, NSString *> DIMConfirmTableM;
         _confirmations = table;
     }
     if (CT) {
-        NSString *signature = [CT base64Encode];
+        NSString *signature = [CT mkm_base64Encode];
         [_confirmations setObject:signature forKey:ID.address];
     }
 }
@@ -147,7 +147,7 @@ typedef NSMutableDictionary<const DIMAddress *, NSString *> DIMConfirmTableM;
 - (NSData *)confirmationForID:(const DIMID *)ID {
     NSString *signature = [self.confirmations objectForKey:ID.address];
     NSAssert(signature, @"confirmation not found for %@", ID);
-    return [signature base64Decode];
+    return [signature mkm_base64Decode];
 }
 
 @end

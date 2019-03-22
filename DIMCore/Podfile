@@ -1,0 +1,10 @@
+source 'https://github.com/Ceezy/dim-specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '11.0'
+#use_frameworks! 
+
+target 'DIMCore' do
+  pod 'DaoKeDao'
+  pod 'MingKeMing'
+end

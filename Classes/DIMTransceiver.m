@@ -7,8 +7,8 @@
 //
 
 #import "NSObject+Singleton.h"
-#import "NSObject+JsON.h"
-#import "NSData+Crypto.h"
+#import "NSObject+MKM_JSON.h"
+#import "NSData+MKM_Crypto.h"
 
 #import "DIMBarrack.h"
 #import "DIMKeyStore.h"
@@ -33,16 +33,16 @@ SingletonImplementations(DIMTransceiver, sharedInstance)
     DIMSymmetricKey *symmetricKey = [DIMSymmetricKey keyWithKey:password];
     NSAssert(symmetricKey == password, @"irregular symmetric key: %@", password);
     
-    NSString *json = [content jsonString];
-    NSData *data = [json data];
+    NSString *json = [content mkm_jsonString];
+    NSData *data = [json mkm_data];
     return [symmetricKey encrypt:data];
 }
 
 - (nullable NSData *)message:(const DKDInstantMessage *)iMsg
                   encryptKey:(const NSDictionary *)password
                  forReceiver:(const NSString *)receiver {
-    NSString *json = [password jsonString];
-    NSData *data = [json data];
+    NSString *json = [password mkm_jsonString];
+    NSData *data = [json mkm_data];
     DIMID *ID = [DIMID IDWithID:receiver];
     DIMPublicKey *PK = DIMPublicKeyForID(ID);
     return [PK encrypt:data];
@@ -61,8 +61,8 @@ SingletonImplementations(DIMTransceiver, sharedInstance)
         NSAssert(false, @"failed to decrypt data: %@, key: %@", data, password);
         return nil;
     }
-    NSString *json = [plaintext UTF8String]; // remove garbage at end
-    NSDictionary *dict = [[json data] jsonDictionary];
+    NSString *json = [plaintext mkm_UTF8String]; // remove garbage at end
+    NSDictionary *dict = [[json mkm_data] mkm_jsonDictionary];
     // pack message content
     return [[DKDMessageContent alloc] initWithDictionary:dict];
 }
@@ -88,8 +88,8 @@ SingletonImplementations(DIMTransceiver, sharedInstance)
         NSAssert(plaintext.length > 0, @"failed to decrypt key in msg: %@", sMsg);
         
         // create symmetric key
-        NSString *json = [plaintext UTF8String]; // remove garbage at end
-        NSDictionary *dict = [[json data] jsonDictionary];
+        NSString *json = [plaintext mkm_UTF8String]; // remove garbage at end
+        NSDictionary *dict = [[json mkm_data] mkm_jsonDictionary];
         PW = [[DIMSymmetricKey alloc] initWithDictionary:dict];
         NSAssert(PW, @"invalid key: %@", dict);
         

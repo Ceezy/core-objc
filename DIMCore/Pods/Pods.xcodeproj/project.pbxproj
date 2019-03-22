@@ -1,0 +1,1186 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006C20FF4764518DB58B8041B1370BD9 /* NSData+MKM_Crypto.mm in Sources */ = {isa = PBXBuildFile; fileRef = C942AFF790BAF3F038CB5998E1DAA4F9 /* NSData+MKM_Crypto.mm */; };
+		006CA13BDB4DABE5BE0A2AA220051DC1 /* DKDMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = BE61A813C1A8DE246EDDE32C8D667925 /* DKDMessage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		00B4A2717382626E9DFA6FC0F4FBFAC1 /* MKMSymmetricKey.h in Headers */ = {isa = PBXBuildFile; fileRef = F332C0F1DC84ADA6141D233F9FF96F49 /* MKMSymmetricKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		014367BC0D37D47F9972FE395F551947 /* MKMSymmetricKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F195E796FE38BCCE648F05639C70CC4 /* MKMSymmetricKey.m */; };
+		061910C912720435C54C07FC3560BCFB /* DKDDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB315D321120AA751776BBF2A29DC1D /* DKDDictionary.m */; };
+		06BE68524E62CA9DEEAD8CE1875583AA /* MKMPublicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = FE33A27055731F54C673D7BD697E7619 /* MKMPublicKey.m */; };
+		073F031A82C8490694EFFDBCD2B52F2E /* Pods-DIMCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5A22DC0A1C862C42E6D81B1361A49E /* Pods-DIMCore-dummy.m */; };
+		07619E15C4785CCE4DAEBC1DBA33AA98 /* ripemd160.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 134F0008C3592B5E56A84A435B80AB2E /* ripemd160.cpp */; };
+		0ADBBBCC780DCBD7D14A28CB3E835DC8 /* MKMImmortals.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE406F5620E4286604B9E6230F5A16D /* MKMImmortals.m */; };
+		0C49755EF5788A7C8BD0ADD9B59066AF /* MKMPrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F63F615C8118723C99A1E38F48B8B4 /* MKMPrivateKey.m */; };
+		0E1AF40A31066336570205C2A521CD37 /* MKMGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6704BEBDD8717479092C810A65DD410F /* MKMGroup.m */; };
+		102A3563EF7A4D03D81DC25EAC9A82C7 /* DKDMessageContent+Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABFC68B0265556187D267F57CA1F137 /* DKDMessageContent+Video.m */; };
+		15B9AFDFB4DB7BB45362358ACD4C4A7E /* DKDMessageContent+Forward.h in Headers */ = {isa = PBXBuildFile; fileRef = 40420705805A0A366088986F6A84D216 /* DKDMessageContent+Forward.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		18A2DFABB093507A47C540B5ED0E4877 /* MKMImmortals.h in Headers */ = {isa = PBXBuildFile; fileRef = 55FC40CF3EC5F77A826C0DE37DF57B62 /* MKMImmortals.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1907D591E5D9D0B5DEC5E92AF8595C74 /* DKDEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 4950A1C3DF253B3D79F9245822333393 /* DKDEnvelope.m */; };
+		1C3531E3B8EC492EBA398F299FB4D688 /* MKMChatroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AECACD5367CC4EC4A60802999092118 /* MKMChatroom.m */; };
+		1E9F8380CD22293A8E9DD47EC9EF0D07 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7570261E6ACC7105B21202B26AE43D97 /* Security.framework */; };
+		203B5BC7B8BBFD453A963F6CF16C469B /* MKMPrivateKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FCDCC2BBB279156470C62DCAC60893 /* MKMPrivateKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		20AED0B605F44A895A8C26B2D3F1E376 /* DKDReliableMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 221659A26F1C653DEAA6FF2332AD0B15 /* DKDReliableMessage.m */; };
+		2121DAEFB76B8B8D99961388C8E84A3E /* NSDate+MKM_Timestamp.h in Headers */ = {isa = PBXBuildFile; fileRef = 05EC9623A5ACAB40594A4249981755F9 /* NSDate+MKM_Timestamp.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2225C32F408CAE99EA27C0231DE6D7EA /* NSArray+MKM_Merkle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECBB720B8B1789F5CD62AED3A02FC2B /* NSArray+MKM_Merkle.m */; };
+		222A5746A79F11E6A2A62B355C591A6C /* DKDMessageContent+Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB2F43296B4F68DC05BC5B22C3AB78 /* DKDMessageContent+Command.m */; };
+		2E3E658B0781FE10C8023FCCF5EB2A0E /* DKDMessageContent+Audio.h in Headers */ = {isa = PBXBuildFile; fileRef = BEAAC6FD758FF0F33069B0BB31F818A6 /* DKDMessageContent+Audio.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3267E0537A43F0190446E56219FEB1D5 /* MKMRSAKeyHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 87021E2FE7307489929F589A8B15C907 /* MKMRSAKeyHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		32BB464EBFE31CEB5F486B4D761E2207 /* DKDSecureMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05529E8BD7E0D21392CE6E368AE34EDD /* DKDSecureMessage.m */; };
+		3779606043AEEE502CA10EE2C08D7FA0 /* DKDMessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = C07356ADB4E67F52D4B14155CF419F08 /* DKDMessageContent.m */; };
+		37D2EC6373630A0A86FD280D97BCC747 /* DKDMessageContent+Quote.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AA9457419E725CFFCCF2D0EB567C34 /* DKDMessageContent+Quote.m */; };
+		3896573D97F66C3B0072AE4040226FE7 /* DKDMessageContent+Quote.h in Headers */ = {isa = PBXBuildFile; fileRef = D621ACE843593AB628B789AFDCEF2238 /* DKDMessageContent+Quote.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		393F586AE829E0C5540D3C3AA7B31186 /* MKMString.h in Headers */ = {isa = PBXBuildFile; fileRef = A30E3C60D4C0CCAB8D29194D3A9A9AA1 /* MKMString.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3AF918870CED7336F6C7DED5CEA7EB08 /* MKMAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D1F82EEF445C68187396E23687E6AD7 /* MKMAddress.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3CB77D2EA92F2AF284CA673AA92B3058 /* MKMProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D62C724BE445986C49A557E50E92302 /* MKMProfile.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D380E4036CC5A4CA31B9DEA32E591F2 /* NSArray+MKM_Merkle.h in Headers */ = {isa = PBXBuildFile; fileRef = C802A4E535426F94F73453B4AF84D137 /* NSArray+MKM_Merkle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3ED0C5F6309422E5059A69AFA4092C87 /* NSData+MKM_Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = FEB647231E3B4D4C9E8FDFE02C7E1A79 /* NSData+MKM_Crypto.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		45A87B28BBE79DB19E3E3436D743368C /* DKDEnvelope.h in Headers */ = {isa = PBXBuildFile; fileRef = AACD4732F2828D5030DAE7EBDE38BD08 /* DKDEnvelope.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		472915E3367E9475782727037A03587E /* NSObject+DKD_JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 69741F65E562A623C6BFD738FD317C33 /* NSObject+DKD_JSON.m */; };
+		4811AD093E1FFE2D9E34424D218620B7 /* NSObject+MKM_JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 90EC20184BDE0C7D764F5B12808ACC39 /* NSObject+MKM_JSON.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4932AB2B41452AC9AE19B4FD70D96EC8 /* MKMMember.m in Sources */ = {isa = PBXBuildFile; fileRef = E61775A5EC30B15F4A85E0C7A67B6939 /* MKMMember.m */; };
+		4CCEFF2A2443C2108993708466B3087B /* MKMAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 39864AA85BA708A1C05D8FE25672671C /* MKMAccount.m */; };
+		4E513A1D36F7B04CDFD4D82E0FD49ED9 /* byteswap.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EA40E3673BAA6140C94D2256FAB383A /* byteswap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4ED5A13DF41D7C36D2911C3BD7084676 /* NSDate+DKD_Timestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 226F01BF05EBEDC5E0ED371BB54BA7BD /* NSDate+DKD_Timestamp.m */; };
+		4EEE66F01F23B380E8BF23AD1BA24850 /* DKDMessageContent+Image.h in Headers */ = {isa = PBXBuildFile; fileRef = FE60278C9E2513E0B0F8D3A7D49C95E4 /* DKDMessageContent+Image.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		58D383538314CDB1B85F4714C32C7F55 /* NSObject+MKM_Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EAD3E2E910A52A142D114B1EB31D72B /* NSObject+MKM_Compare.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B5595D2170B21C72839903D1723A3EB /* MKMRSAPrivateKey+PersistentStore.h in Headers */ = {isa = PBXBuildFile; fileRef = D7EBA266C9EB766A4202A7FD8424A870 /* MKMRSAPrivateKey+PersistentStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5C8FDEF47CE839D74670B56F4657543A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC2E512ACD5CB722F7ADF14560309F /* Foundation.framework */; };
+		610A204CF3BEEF17F38BFAB3D63B1D82 /* MKMAsymmetricKey.m in Sources */ = {isa = PBXBuildFile; fileRef = B908FFDC2D6E3C64670792538570CB54 /* MKMAsymmetricKey.m */; };
+		6232025FCB1B1B7FC44CAE3FDA4D1732 /* DaoKeDao-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B54AE1A4C4AA2F972525BA75AE584A /* DaoKeDao-dummy.m */; };
+		6505EA1C55AE0F0FED92045302F01172 /* NSData+DKD_Encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 04856C52FE61200EE1D3DAD30CCD7A1A /* NSData+DKD_Encode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		659B08086ED5393C01FAB44F05ABE104 /* base58.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F21BF33E1D9C29105916B71AD3B5393 /* base58.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6700E580D7C1F99F451A1BE5971FC584 /* MKMDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ECE0CF6588F1A7C6B0B5DD010E137CC /* MKMDictionary.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		69E9D8DB05010434AC9C215FF4BC4737 /* NSString+MKM_Decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B4E3867B0A7C52BFF20384C81D405DC /* NSString+MKM_Decode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6B3161809F03CA6BEC6FE75552A28FBC /* DKDMessageContent+File.h in Headers */ = {isa = PBXBuildFile; fileRef = C29A9C87FD859AA8D76C135551533116 /* DKDMessageContent+File.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6D4E81EC6B5D5B274C783D35EB1BB2DD /* MKMPolylogue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0F17A850EC23F09667E82857025558 /* MKMPolylogue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		71A0F53A45142508FBD90C5EA40DE661 /* NSString+DKD_Encode.h in Headers */ = {isa = PBXBuildFile; fileRef = FF86B6111FF85062FD428DF397C2AD4C /* NSString+DKD_Encode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7354EA13F745276394BDC2BF1D601615 /* DaoKeDao.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7181B5B895F0CEAEE69C0B33BE3DD4 /* DaoKeDao.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		75A373E53FE44A3D253749C97B738E6E /* MKMID.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AFAF326F2E10E58B4F8217D774E2E3 /* MKMID.m */; };
+		77B329E88F2EA6216AB6CBF4DBF693BA /* NSDate+DKD_Timestamp.h in Headers */ = {isa = PBXBuildFile; fileRef = 460F1CD41E3E9CBFDDD14084BD7D0F3E /* NSDate+DKD_Timestamp.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		798B90D5374B999861AD691A7092A102 /* MKMChatroom.h in Headers */ = {isa = PBXBuildFile; fileRef = 0539D72774097AB688D0AA3DC65F9702 /* MKMChatroom.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7CF58534B78AA1A560EF8DBE57C88266 /* MKMMember.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFC5A1173CF003150E4DD4FAB656025 /* MKMMember.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7ECFA9ED06512D60C04BF87603254810 /* DKDSecureMessage+Packing.m in Sources */ = {isa = PBXBuildFile; fileRef = 939A5FD248E9858B7AAA6FFD0FE915F6 /* DKDSecureMessage+Packing.m */; };
+		7ED97EDD48F4DB519F58CF498D2FBD3D /* MKMRSAPublicKey.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D7A9D77C00A2026F6FDD6CFC3834D4 /* MKMRSAPublicKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80B1E108175B80043BB7DF36467BDCBC /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D3C02D0137F90A469FC100B18186B1 /* common.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81DCC81FC8B81DA718C4D418E61969DE /* DKDMessageContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1795F5D1E43398B8DFA1945A6D64C972 /* DKDMessageContent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84275BB6CA0F7C89C58E2B1174741F73 /* DKDMessageContent+Text.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8038B699A31D7FD6705861D1E758CA /* DKDMessageContent+Text.m */; };
+		84CA78D76DF82810B6D3E0CC4FF40E01 /* MKMAsymmetricKey.h in Headers */ = {isa = PBXBuildFile; fileRef = B7815AFBD21AC605DFEA832CBE7BA4F9 /* MKMAsymmetricKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8974DA1DD23E76F756DEF8B559B90F61 /* MKMString.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCE11C5EB43F0EF2FEB4AAB9876C4A7 /* MKMString.m */; };
+		8A4481DA4C01FB251C9D4F87821D6248 /* DKDSecureMessage+Packing.h in Headers */ = {isa = PBXBuildFile; fileRef = 838B7E5AD8E7C8BBABE7CDD89100594F /* DKDSecureMessage+Packing.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9093F60BDCDAA53690F1BC32EC9491DF /* DKDMessageContent+History.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B2C2C9A837D1554D7FC834A988206C /* DKDMessageContent+History.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		91B3464715D2E7C3C54DB07F547C6D90 /* MKMProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 162151359B7DBF60EA5B43A21FD23C9A /* MKMProfile.m */; };
+		93C1A71C77C17DE6634D3238E305FA0F /* MKMEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A18E595AC92EF169E9ABF9BCDE575F0 /* MKMEntity.m */; };
+		946FE36C6849002986793079247CDBE9 /* DKDInstantMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5931A9743C38EF213F37200639D661F8 /* DKDInstantMessage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		98E82CF37EAE58A7010498F57C4049BB /* DKDInstantMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 69339FA4AD9E83858C0AF47B38AC72A1 /* DKDInstantMessage.m */; };
+		9A770DC34A00E6B449726FA197B651B7 /* MKMDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E6EE16DE3687E2A281B7F0E2F53AAE /* MKMDictionary.m */; };
+		9C01B3723C8E987C473CBAB073F3A97B /* MKMRSAPrivateKey+PersistentStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D21CF6A0226324BDF06D63DE16B3A3 /* MKMRSAPrivateKey+PersistentStore.m */; };
+		9CE1831BF065BA970ED6FF266D05A33C /* DKDReliableMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ED2FB86236B9488CD1662F617690C19 /* DKDReliableMessage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9DFD0E40A4BB524AA788977E16C803F4 /* base58.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 574B55CA540B01A1468866CC9F628C86 /* base58.cpp */; };
+		9E7422F684EAA5E48790612A450B2939 /* DKDMessage+Transform.h in Headers */ = {isa = PBXBuildFile; fileRef = C46BA6A4359599C663AAA3C7732879D4 /* DKDMessage+Transform.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A014E686266E09D89D5BFF5F92FE5930 /* MKMContact.h in Headers */ = {isa = PBXBuildFile; fileRef = F93891A8ADBE669F293A72ACA43350F6 /* MKMContact.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A2D9EE33200E95F9D36E4B047DCE5BCE /* DKDMessage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 5522950F9EBB9A40669754961C339AED /* DKDMessage+Transform.m */; };
+		A4703CFFDD1E158C93F861F534F78BA9 /* NSString+MKM_Decode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8AE71E94BFEF635DBE7D09C98712D127 /* NSString+MKM_Decode.mm */; };
+		A66BA9D69B3A30CFAF4063F6FF6446A6 /* MingKeMing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C71588CC01FFB8542DB2FFE168434EB8 /* MingKeMing-dummy.m */; };
+		A81CA34D2E61FBABE32BB68DB506E462 /* MKMCryptographyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8B2D7E4E9B7A2055EAEC0126C675E3 /* MKMCryptographyKey.m */; };
+		A94F61D0FE4B88B78EE227C59B8D1C24 /* DKDMessageContent+Audio.m in Sources */ = {isa = PBXBuildFile; fileRef = D89BC27C6E7A3094377A62F941D31013 /* DKDMessageContent+Audio.m */; };
+		AA2F0FD0EF19A06046A28792B7A4CE93 /* MKMAESKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9B11F4FB2343B2FE4057B33E700E71 /* MKMAESKey.m */; };
+		B0FEBB8B3C81AF3E06C070AC2D26F6AE /* MKMMeta.h in Headers */ = {isa = PBXBuildFile; fileRef = C82CC6F58BB13B884A94A2E63EEA0432 /* MKMMeta.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B4334AADA044DABC4C92C149613F0E8F /* NSDictionary+MKM_Binary.h in Headers */ = {isa = PBXBuildFile; fileRef = 3979C28B2E655BD4BBF14C968EA8E3B9 /* NSDictionary+MKM_Binary.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B43C19405FB41E4D1E0C746BD0123B20 /* DKDMessageContent+Webpage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DAC22C855A2637D0CCC882F0E8DB1F /* DKDMessageContent+Webpage.m */; };
+		B5870A5D3A18120409F59F42828D458A /* MKMContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 387F65B09C86E6814B21EF1A1ED4CC0A /* MKMContact.m */; };
+		B9ADA9EDD52F0F8D97FAF174F7B0B8CC /* MKMCryptographyKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F21515301CA5414DFF0826072DE519 /* MKMCryptographyKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BA06037EEB30AA2DC2C990A3B1D4A152 /* MKMID.h in Headers */ = {isa = PBXBuildFile; fileRef = 656102245882D01A3E71A098CA028826 /* MKMID.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BA5CC03800C83DEFF05882146C86F7AF /* MKMRSAKeyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C07C31A4897FD1D44F9187177E64F2 /* MKMRSAKeyHelper.m */; };
+		BF6A77CE43211F898A32DB480003DA71 /* MKMRSAPrivateKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AECA102E4A7A328FC26223BA71FF703 /* MKMRSAPrivateKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3DB306BE3B273DC5A4554BDBC2F2878 /* MKMGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 68CCB2DA2598A6B6C0D6B203BA5C9BCE /* MKMGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C5BF129D2A9F0058786738B4AA87DE15 /* DKDMessageContent+File.m in Sources */ = {isa = PBXBuildFile; fileRef = CB890F23A32EDEBAB707C1C48733A86B /* DKDMessageContent+File.m */; };
+		C7622DF35CE79C978D20C684A5A314CB /* MKMAESKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 31B4AAFD8B7687CBB96FBC3E92BD92BE /* MKMAESKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C7927ADC3332F1C44EA257945BCC2197 /* MKMAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = C75086054BFD1606097D4E2C6DF3BE5B /* MKMAddress.m */; };
+		C819DA949C131B0CA716B1304C36A89C /* DKDDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 3638B38B46741F0A88E892D023C186ED /* DKDDictionary.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C8DCBE9D21F11B104E3632AB54991D16 /* DKDMessageContent+Video.h in Headers */ = {isa = PBXBuildFile; fileRef = BA82C38BDFB0DAEDC9CE8A7F7BBF654E /* DKDMessageContent+Video.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CF1CF8DF6EB51487FC1815124186BAC6 /* MKMPolylogue.m in Sources */ = {isa = PBXBuildFile; fileRef = 81ADFE7BDEE83416C05F44260315048B /* MKMPolylogue.m */; };
+		CF600ECC95BFEF5502D4DC8A7677F9DB /* DKDMessageContent+Text.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1906620411A87523B8424DD9974E8D /* DKDMessageContent+Text.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D40ECE8B1D26A727F44564C995273C31 /* MKMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A949309C106167BA8019C3C895A938 /* MKMUser.m */; };
+		D5F7A53B8679205A6DFA6E786037E7B0 /* MingKeMing.h in Headers */ = {isa = PBXBuildFile; fileRef = E663CE805974F96750EC46A05239C966 /* MingKeMing.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D62E133C518B097065CAA4A829B763F9 /* NSObject+DKD_JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0673C58A33112305E577CDC055CD462C /* NSObject+DKD_JSON.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D9BD0A8D0DA349B8927B594D93391613 /* MKMEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 2941D59A025741597C462FB90412DBFD /* MKMEntity.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DECBD89E53F0783EBB639206F47052C1 /* DKDMessageContent+History.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA366597C69BDBA491F6F394B19A42F /* DKDMessageContent+History.m */; };
+		DFBABDC74EB78D6862B5B7289705EC5B /* NSDictionary+MKM_Binary.m in Sources */ = {isa = PBXBuildFile; fileRef = BB13E15EFBEF9C4B5D7265FDB4ED3A0F /* NSDictionary+MKM_Binary.m */; };
+		E57A2A7304BB29B2C28E20E80FD45920 /* endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CECCAB887FDE0F3959B3F3388EC18DD /* endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E784441FBCE99DD52A12C19EC7A9A040 /* DKDMessageContent+Forward.m in Sources */ = {isa = PBXBuildFile; fileRef = 326E071D51E84664593382BF4A28FBE8 /* DKDMessageContent+Forward.m */; };
+		E7B313AD8496A4E00C6CE6EF1FC325A1 /* NSDate+MKM_Timestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D520B3D6B0A7823966712C2E3E5A1D /* NSDate+MKM_Timestamp.m */; };
+		EBE9B8540917AE70BF4C2ADF6765847E /* MKMRSAPublicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 054B9257AC62ACB233C4B57E06C65575 /* MKMRSAPublicKey.m */; };
+		EC50576519B084320E18C8E50FE48E12 /* DKDMessageContent+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BE219FCD9CC5285E5F95713D7350E8 /* DKDMessageContent+Image.m */; };
+		EE05D90759BEFC63DE9FCE8E2A0369A0 /* NSObject+MKM_JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D630B7EBEF2216EAE9B66A4E13AF0D4 /* NSObject+MKM_JSON.m */; };
+		F0401C4126C45EB3D627FB1ABF06565B /* DKDSecureMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 769143CCDBB1C5048F708A26C4819032 /* DKDSecureMessage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F0554100AC7D3C80AF6D965BCA3FE0FD /* DKDMessageContent+Webpage.h in Headers */ = {isa = PBXBuildFile; fileRef = 576A06FF4941231AC94A77A401640341 /* DKDMessageContent+Webpage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F23D21387BDDE7C891FF64466637B42C /* MKMPublicKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 843995358D6A994D03F06C4B10D8E6A6 /* MKMPublicKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F3EEC96F9246097D5A5A297D0B273272 /* MKMUser.h in Headers */ = {isa = PBXBuildFile; fileRef = D1ED7721A3D195AF1818A81F1C7E867C /* MKMUser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F46218994261F144901A98F545F6B62B /* MKMMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B49D7955FFBA9CD49CA7F408C8417E3 /* MKMMeta.m */; };
+		F4945259AFB239E1E345FD2507FB4810 /* DKDMessageContent+Command.h in Headers */ = {isa = PBXBuildFile; fileRef = 245EBE0B0DF5324E4FA71671E4498F26 /* DKDMessageContent+Command.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F77FBFA513C979B4F739F3C1A0FB0178 /* MKMRSAPrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F43F57AD293704B3C3F0C2039D0488D /* MKMRSAPrivateKey.m */; };
+		FB62EC634D9AA3E9FB04CB0366B033EE /* MKMAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFF61DA2E33D685EEC00C0EDC4A3EA8 /* MKMAccount.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FD58409F7FE400DF30E15CEC7557BD69 /* ripemd160.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A5C3B84E2D81970CBFDCF23751F8588 /* ripemd160.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FEFD75D9845E4A1487CB1EFC354A0A67 /* DKDMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0CB5E92D03A02A96DECDBD5A6112C7 /* DKDMessage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		456C54095E073401DC55C104E1871453 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 705D446B22D73FAA41B76306A35F63D2;
+			remoteInfo = MingKeMing;
+		};
+		858F525A46419B1F2B990F7F22EBCC10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA1B74D037FFE6ACB4C66CDA09DEF801;
+			remoteInfo = DaoKeDao;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B12E1BD98F8177876D9016FAFFEFC9 /* MingKeMing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MingKeMing.xcconfig; sourceTree = "<group>"; };
+		04856C52FE61200EE1D3DAD30CCD7A1A /* NSData+DKD_Encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+DKD_Encode.h"; path = "Classes/extends/NSData+DKD_Encode.h"; sourceTree = "<group>"; };
+		049FF5A57D3175AE02E3138E0E91AB29 /* Pods-DIMCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DIMCore.release.xcconfig"; sourceTree = "<group>"; };
+		0539D72774097AB688D0AA3DC65F9702 /* MKMChatroom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMChatroom.h; path = Classes/group/MKMChatroom.h; sourceTree = "<group>"; };
+		054B9257AC62ACB233C4B57E06C65575 /* MKMRSAPublicKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMRSAPublicKey.m; path = Classes/crypto/MKMRSAPublicKey.m; sourceTree = "<group>"; };
+		05529E8BD7E0D21392CE6E368AE34EDD /* DKDSecureMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKDSecureMessage.m; path = Classes/message/DKDSecureMessage.m; sourceTree = "<group>"; };
+		05EC9623A5ACAB40594A4249981755F9 /* NSDate+MKM_Timestamp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+MKM_Timestamp.h"; path = "Classes/extends/NSDate+MKM_Timestamp.h"; sourceTree = "<group>"; };
+		0673C58A33112305E577CDC055CD462C /* NSObject+DKD_JSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+DKD_JSON.h"; path = "Classes/extends/NSObject+DKD_JSON.h"; sourceTree = "<group>"; };
+		0B49D7955FFBA9CD49CA7F408C8417E3 /* MKMMeta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMMeta.m; path = Classes/entity/MKMMeta.m; sourceTree = "<group>"; };
+		0C8B2D7E4E9B7A2055EAEC0126C675E3 /* MKMCryptographyKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMCryptographyKey.m; path = Classes/crypto/MKMCryptographyKey.m; sourceTree = "<group>"; };
+		0D630B7EBEF2216EAE9B66A4E13AF0D4 /* NSObject+MKM_JSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MKM_JSON.m"; path = "Classes/extends/NSObject+MKM_JSON.m"; sourceTree = "<group>"; };
+		0ECE0CF6588F1A7C6B0B5DD010E137CC /* MKMDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMDictionary.h; path = Classes/types/MKMDictionary.h; sourceTree = "<group>"; };
+		12DAC22C855A2637D0CCC882F0E8DB1F /* DKDMessageContent+Webpage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DKDMessageContent+Webpage.m"; path = "Classes/content/DKDMessageContent+Webpage.m"; sourceTree = "<group>"; };
+		134F0008C3592B5E56A84A435B80AB2E /* ripemd160.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ripemd160.cpp; path = Classes/bitcoin/src/crypto/ripemd160.cpp; sourceTree = "<group>"; };
+		162151359B7DBF60EA5B43A21FD23C9A /* MKMProfile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMProfile.m; path = Classes/MKMProfile.m; sourceTree = "<group>"; };
+		1795F5D1E43398B8DFA1945A6D64C972 /* DKDMessageContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKDMessageContent.h; path = Classes/content/DKDMessageContent.h; sourceTree = "<group>"; };
+		1EB315D321120AA751776BBF2A29DC1D /* DKDDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKDDictionary.m; path = Classes/types/DKDDictionary.m; sourceTree = "<group>"; };
+		221659A26F1C653DEAA6FF2332AD0B15 /* DKDReliableMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKDReliableMessage.m; path = Classes/message/DKDReliableMessage.m; sourceTree = "<group>"; };
+		226F01BF05EBEDC5E0ED371BB54BA7BD /* NSDate+DKD_Timestamp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DKD_Timestamp.m"; path = "Classes/extends/NSDate+DKD_Timestamp.m"; sourceTree = "<group>"; };
+		245EBE0B0DF5324E4FA71671E4498F26 /* DKDMessageContent+Command.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DKDMessageContent+Command.h"; path = "Classes/content/DKDMessageContent+Command.h"; sourceTree = "<group>"; };
+		2941D59A025741597C462FB90412DBFD /* MKMEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMEntity.h; path = Classes/entity/MKMEntity.h; sourceTree = "<group>"; };
+		2C9B11F4FB2343B2FE4057B33E700E71 /* MKMAESKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMAESKey.m; path = Classes/crypto/MKMAESKey.m; sourceTree = "<group>"; };
+		2F195E796FE38BCCE648F05639C70CC4 /* MKMSymmetricKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMSymmetricKey.m; path = Classes/crypto/MKMSymmetricKey.m; sourceTree = "<group>"; };
+		31B4AAFD8B7687CBB96FBC3E92BD92BE /* MKMAESKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMAESKey.h; path = Classes/crypto/MKMAESKey.h; sourceTree = "<group>"; };
+		326E071D51E84664593382BF4A28FBE8 /* DKDMessageContent+Forward.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DKDMessageContent+Forward.m"; path = "Classes/content/DKDMessageContent+Forward.m"; sourceTree = "<group>"; };
+		3638B38B46741F0A88E892D023C186ED /* DKDDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKDDictionary.h; path = Classes/types/DKDDictionary.h; sourceTree = "<group>"; };
+		387F65B09C86E6814B21EF1A1ED4CC0A /* MKMContact.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMContact.m; path = Classes/entity/MKMContact.m; sourceTree = "<group>"; };
+		3979C28B2E655BD4BBF14C968EA8E3B9 /* NSDictionary+MKM_Binary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MKM_Binary.h"; path = "Classes/extends/NSDictionary+MKM_Binary.h"; sourceTree = "<group>"; };
+		39864AA85BA708A1C05D8FE25672671C /* MKMAccount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMAccount.m; path = Classes/entity/MKMAccount.m; sourceTree = "<group>"; };
+		3BFC5A1173CF003150E4DD4FAB656025 /* MKMMember.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMMember.h; path = Classes/group/MKMMember.h; sourceTree = "<group>"; };
+		3F0CB5E92D03A02A96DECDBD5A6112C7 /* DKDMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKDMessage.m; path = Classes/message/DKDMessage.m; sourceTree = "<group>"; };
+		40420705805A0A366088986F6A84D216 /* DKDMessageContent+Forward.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DKDMessageContent+Forward.h"; path = "Classes/content/DKDMessageContent+Forward.h"; sourceTree = "<group>"; };
+		43BE219FCD9CC5285E5F95713D7350E8 /* DKDMessageContent+Image.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DKDMessageContent+Image.m"; path = "Classes/content/DKDMessageContent+Image.m"; sourceTree = "<group>"; };
+		460F1CD41E3E9CBFDDD14084BD7D0F3E /* NSDate+DKD_Timestamp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DKD_Timestamp.h"; path = "Classes/extends/NSDate+DKD_Timestamp.h"; sourceTree = "<group>"; };
+		47B7272B8795A2371E39AFC30F277CBF /* MingKeMing-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MingKeMing-prefix.pch"; sourceTree = "<group>"; };
+		4950A1C3DF253B3D79F9245822333393 /* DKDEnvelope.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKDEnvelope.m; path = Classes/message/DKDEnvelope.m; sourceTree = "<group>"; };
+		4A5C3B84E2D81970CBFDCF23751F8588 /* ripemd160.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd160.h; path = Classes/bitcoin/src/crypto/ripemd160.h; sourceTree = "<group>"; };
+		4CCF4F78586A07237373A150448A6CBC /* Pods-DIMCore-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DIMCore-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4CFBF78999DF5BFA81FBF4A2F443737F /* Pods-DIMCore-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DIMCore-resources.sh"; sourceTree = "<group>"; };
+		4CFF61DA2E33D685EEC00C0EDC4A3EA8 /* MKMAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMAccount.h; path = Classes/entity/MKMAccount.h; sourceTree = "<group>"; };
+		4F21BF33E1D9C29105916B71AD3B5393 /* base58.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base58.h; path = Classes/bitcoin/src/base58.h; sourceTree = "<group>"; };
+		54FCDCC2BBB279156470C62DCAC60893 /* MKMPrivateKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMPrivateKey.h; path = Classes/crypto/MKMPrivateKey.h; sourceTree = "<group>"; };
+		5522950F9EBB9A40669754961C339AED /* DKDMessage+Transform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DKDMessage+Transform.m"; path = "Classes/message/DKDMessage+Transform.m"; sourceTree = "<group>"; };
+		55C7CA8950431A017E00B7A15D6430D0 /* libMingKeMing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMingKeMing.a; path = libMingKeMing.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F63F615C8118723C99A1E38F48B8B4 /* MKMPrivateKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMPrivateKey.m; path = Classes/crypto/MKMPrivateKey.m; sourceTree = "<group>"; };
+		55FC40CF3EC5F77A826C0DE37DF57B62 /* MKMImmortals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMImmortals.h; path = Classes/MKMImmortals.h; sourceTree = "<group>"; };
+		574B55CA540B01A1468866CC9F628C86 /* base58.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = base58.cpp; path = Classes/bitcoin/src/base58.cpp; sourceTree = "<group>"; };
+		576A06FF4941231AC94A77A401640341 /* DKDMessageContent+Webpage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DKDMessageContent+Webpage.h"; path = "Classes/content/DKDMessageContent+Webpage.h"; sourceTree = "<group>"; };
+		57F21515301CA5414DFF0826072DE519 /* MKMCryptographyKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMCryptographyKey.h; path = Classes/crypto/MKMCryptographyKey.h; sourceTree = "<group>"; };
+		5931A9743C38EF213F37200639D661F8 /* DKDInstantMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKDInstantMessage.h; path = Classes/message/DKDInstantMessage.h; sourceTree = "<group>"; };
+		5AECA102E4A7A328FC26223BA71FF703 /* MKMRSAPrivateKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMRSAPrivateKey.h; path = Classes/crypto/MKMRSAPrivateKey.h; sourceTree = "<group>"; };
+		5B80B5760288A24E0E892EFDA735DA89 /* DaoKeDao.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DaoKeDao.xcconfig; sourceTree = "<group>"; };
+		5BE406F5620E4286604B9E6230F5A16D /* MKMImmortals.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMImmortals.m; path = Classes/MKMImmortals.m; sourceTree = "<group>"; };
+		5D0F17A850EC23F09667E82857025558 /* MKMPolylogue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMPolylogue.h; path = Classes/group/MKMPolylogue.h; sourceTree = "<group>"; };
+		5EA40E3673BAA6140C94D2256FAB383A /* byteswap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = byteswap.h; path = Classes/bitcoin/src/compat/byteswap.h; sourceTree = "<group>"; };
+		60A949309C106167BA8019C3C895A938 /* MKMUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMUser.m; path = Classes/entity/MKMUser.m; sourceTree = "<group>"; };
+		656102245882D01A3E71A098CA028826 /* MKMID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMID.h; path = Classes/entity/MKMID.h; sourceTree = "<group>"; };
+		6704BEBDD8717479092C810A65DD410F /* MKMGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMGroup.m; path = Classes/group/MKMGroup.m; sourceTree = "<group>"; };
+		67C07C31A4897FD1D44F9187177E64F2 /* MKMRSAKeyHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMRSAKeyHelper.m; path = Classes/crypto/MKMRSAKeyHelper.m; sourceTree = "<group>"; };
+		68CCB2DA2598A6B6C0D6B203BA5C9BCE /* MKMGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMGroup.h; path = Classes/group/MKMGroup.h; sourceTree = "<group>"; };
+		69339FA4AD9E83858C0AF47B38AC72A1 /* DKDInstantMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKDInstantMessage.m; path = Classes/message/DKDInstantMessage.m; sourceTree = "<group>"; };
+		69741F65E562A623C6BFD738FD317C33 /* NSObject+DKD_JSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+DKD_JSON.m"; path = "Classes/extends/NSObject+DKD_JSON.m"; sourceTree = "<group>"; };
+		6A18E595AC92EF169E9ABF9BCDE575F0 /* MKMEntity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMEntity.m; path = Classes/entity/MKMEntity.m; sourceTree = "<group>"; };
+		6D1F82EEF445C68187396E23687E6AD7 /* MKMAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMAddress.h; path = Classes/entity/MKMAddress.h; sourceTree = "<group>"; };
+		6EAD3E2E910A52A142D114B1EB31D72B /* NSObject+MKM_Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MKM_Compare.h"; path = "Classes/extends/NSObject+MKM_Compare.h"; sourceTree = "<group>"; };
+		6ECBB720B8B1789F5CD62AED3A02FC2B /* NSArray+MKM_Merkle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MKM_Merkle.m"; path = "Classes/extends/NSArray+MKM_Merkle.m"; sourceTree = "<group>"; };
+		7570261E6ACC7105B21202B26AE43D97 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		769143CCDBB1C5048F708A26C4819032 /* DKDSecureMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKDSecureMessage.h; path = Classes/message/DKDSecureMessage.h; sourceTree = "<group>"; };
+		7B4E3867B0A7C52BFF20384C81D405DC /* NSString+MKM_Decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MKM_Decode.h"; path = "Classes/extends/NSString+MKM_Decode.h"; sourceTree = "<group>"; };
+		7C2E89BAC257BEC1BE31AA5A10DDC55A /* Pods-DIMCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DIMCore.debug.xcconfig"; sourceTree = "<group>"; };
+		7D62C724BE445986C49A557E50E92302 /* MKMProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMProfile.h; path = Classes/MKMProfile.h; sourceTree = "<group>"; };
+		7D8038B699A31D7FD6705861D1E758CA /* DKDMessageContent+Text.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DKDMessageContent+Text.m"; path = "Classes/content/DKDMessageContent+Text.m"; sourceTree = "<group>"; };
+		7EDB2F43296B4F68DC05BC5B22C3AB78 /* DKDMessageContent+Command.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DKDMessageContent+Command.m"; path = "Classes/content/DKDMessageContent+Command.m"; sourceTree = "<group>"; };
+		7F43F57AD293704B3C3F0C2039D0488D /* MKMRSAPrivateKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMRSAPrivateKey.m; path = Classes/crypto/MKMRSAPrivateKey.m; sourceTree = "<group>"; };
+		81ADFE7BDEE83416C05F44260315048B /* MKMPolylogue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMPolylogue.m; path = Classes/group/MKMPolylogue.m; sourceTree = "<group>"; };
+		838B7E5AD8E7C8BBABE7CDD89100594F /* DKDSecureMessage+Packing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DKDSecureMessage+Packing.h"; path = "Classes/message/DKDSecureMessage+Packing.h"; sourceTree = "<group>"; };
+		843995358D6A994D03F06C4B10D8E6A6 /* MKMPublicKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMPublicKey.h; path = Classes/crypto/MKMPublicKey.h; sourceTree = "<group>"; };
+		87021E2FE7307489929F589A8B15C907 /* MKMRSAKeyHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMRSAKeyHelper.h; path = Classes/crypto/MKMRSAKeyHelper.h; sourceTree = "<group>"; };
+		88B54AE1A4C4AA2F972525BA75AE584A /* DaoKeDao-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DaoKeDao-dummy.m"; sourceTree = "<group>"; };
+		89C4BB552FDD472C9C830F8426886C90 /* libPods-DIMCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-DIMCore.a"; path = "libPods-DIMCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE71E94BFEF635DBE7D09C98712D127 /* NSString+MKM_Decode.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "NSString+MKM_Decode.mm"; path = "Classes/extends/NSString+MKM_Decode.mm"; sourceTree = "<group>"; };
+		8AECACD5367CC4EC4A60802999092118 /* MKMChatroom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMChatroom.m; path = Classes/group/MKMChatroom.m; sourceTree = "<group>"; };
+		8BA366597C69BDBA491F6F394B19A42F /* DKDMessageContent+History.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DKDMessageContent+History.m"; path = "Classes/content/DKDMessageContent+History.m"; sourceTree = "<group>"; };
+		90EC20184BDE0C7D764F5B12808ACC39 /* NSObject+MKM_JSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MKM_JSON.h"; path = "Classes/extends/NSObject+MKM_JSON.h"; sourceTree = "<group>"; };
+		939A5FD248E9858B7AAA6FFD0FE915F6 /* DKDSecureMessage+Packing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DKDSecureMessage+Packing.m"; path = "Classes/message/DKDSecureMessage+Packing.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ABFC68B0265556187D267F57CA1F137 /* DKDMessageContent+Video.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DKDMessageContent+Video.m"; path = "Classes/content/DKDMessageContent+Video.m"; sourceTree = "<group>"; };
+		9CECCAB887FDE0F3959B3F3388EC18DD /* endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = endian.h; path = Classes/bitcoin/src/compat/endian.h; sourceTree = "<group>"; };
+		9ED2FB86236B9488CD1662F617690C19 /* DKDReliableMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKDReliableMessage.h; path = Classes/message/DKDReliableMessage.h; sourceTree = "<group>"; };
+		9EDDB8888FF0C7EAF5C27C276F1F6D74 /* Pods-DIMCore-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DIMCore-acknowledgements.plist"; sourceTree = "<group>"; };
+		A30E3C60D4C0CCAB8D29194D3A9A9AA1 /* MKMString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMString.h; path = Classes/types/MKMString.h; sourceTree = "<group>"; };
+		AACD4732F2828D5030DAE7EBDE38BD08 /* DKDEnvelope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKDEnvelope.h; path = Classes/message/DKDEnvelope.h; sourceTree = "<group>"; };
+		ABDEA88750DD15B36EB4BE99C2E27621 /* libDaoKeDao.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDaoKeDao.a; path = libDaoKeDao.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AFAF326F2E10E58B4F8217D774E2E3 /* MKMID.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMID.m; path = Classes/entity/MKMID.m; sourceTree = "<group>"; };
+		B7815AFBD21AC605DFEA832CBE7BA4F9 /* MKMAsymmetricKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMAsymmetricKey.h; path = Classes/crypto/MKMAsymmetricKey.h; sourceTree = "<group>"; };
+		B908FFDC2D6E3C64670792538570CB54 /* MKMAsymmetricKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMAsymmetricKey.m; path = Classes/crypto/MKMAsymmetricKey.m; sourceTree = "<group>"; };
+		BA82C38BDFB0DAEDC9CE8A7F7BBF654E /* DKDMessageContent+Video.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DKDMessageContent+Video.h"; path = "Classes/content/DKDMessageContent+Video.h"; sourceTree = "<group>"; };
+		BB13E15EFBEF9C4B5D7265FDB4ED3A0F /* NSDictionary+MKM_Binary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MKM_Binary.m"; path = "Classes/extends/NSDictionary+MKM_Binary.m"; sourceTree = "<group>"; };
+		BB1906620411A87523B8424DD9974E8D /* DKDMessageContent+Text.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DKDMessageContent+Text.h"; path = "Classes/content/DKDMessageContent+Text.h"; sourceTree = "<group>"; };
+		BE61A813C1A8DE246EDDE32C8D667925 /* DKDMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKDMessage.h; path = Classes/message/DKDMessage.h; sourceTree = "<group>"; };
+		BE7181B5B895F0CEAEE69C0B33BE3DD4 /* DaoKeDao.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DaoKeDao.h; path = Classes/DaoKeDao.h; sourceTree = "<group>"; };
+		BEAAC6FD758FF0F33069B0BB31F818A6 /* DKDMessageContent+Audio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DKDMessageContent+Audio.h"; path = "Classes/content/DKDMessageContent+Audio.h"; sourceTree = "<group>"; };
+		C07356ADB4E67F52D4B14155CF419F08 /* DKDMessageContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DKDMessageContent.m; path = Classes/content/DKDMessageContent.m; sourceTree = "<group>"; };
+		C29A9C87FD859AA8D76C135551533116 /* DKDMessageContent+File.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DKDMessageContent+File.h"; path = "Classes/content/DKDMessageContent+File.h"; sourceTree = "<group>"; };
+		C2D21CF6A0226324BDF06D63DE16B3A3 /* MKMRSAPrivateKey+PersistentStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKMRSAPrivateKey+PersistentStore.m"; path = "Classes/crypto/MKMRSAPrivateKey+PersistentStore.m"; sourceTree = "<group>"; };
+		C46BA6A4359599C663AAA3C7732879D4 /* DKDMessage+Transform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DKDMessage+Transform.h"; path = "Classes/message/DKDMessage+Transform.h"; sourceTree = "<group>"; };
+		C6D3C02D0137F90A469FC100B18186B1 /* common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = common.h; path = Classes/bitcoin/src/crypto/common.h; sourceTree = "<group>"; };
+		C71588CC01FFB8542DB2FFE168434EB8 /* MingKeMing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MingKeMing-dummy.m"; sourceTree = "<group>"; };
+		C75086054BFD1606097D4E2C6DF3BE5B /* MKMAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMAddress.m; path = Classes/entity/MKMAddress.m; sourceTree = "<group>"; };
+		C7AA9457419E725CFFCCF2D0EB567C34 /* DKDMessageContent+Quote.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DKDMessageContent+Quote.m"; path = "Classes/content/DKDMessageContent+Quote.m"; sourceTree = "<group>"; };
+		C802A4E535426F94F73453B4AF84D137 /* NSArray+MKM_Merkle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MKM_Merkle.h"; path = "Classes/extends/NSArray+MKM_Merkle.h"; sourceTree = "<group>"; };
+		C82CC6F58BB13B884A94A2E63EEA0432 /* MKMMeta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMMeta.h; path = Classes/entity/MKMMeta.h; sourceTree = "<group>"; };
+		C942AFF790BAF3F038CB5998E1DAA4F9 /* NSData+MKM_Crypto.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "NSData+MKM_Crypto.mm"; path = "Classes/extends/NSData+MKM_Crypto.mm"; sourceTree = "<group>"; };
+		C953FE7C301DDDD8D9F9DA508D8E5367 /* DaoKeDao-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DaoKeDao-prefix.pch"; sourceTree = "<group>"; };
+		CB890F23A32EDEBAB707C1C48733A86B /* DKDMessageContent+File.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DKDMessageContent+File.m"; path = "Classes/content/DKDMessageContent+File.m"; sourceTree = "<group>"; };
+		CEDC2E512ACD5CB722F7ADF14560309F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D1ED7721A3D195AF1818A81F1C7E867C /* MKMUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMUser.h; path = Classes/entity/MKMUser.h; sourceTree = "<group>"; };
+		D2B2C2C9A837D1554D7FC834A988206C /* DKDMessageContent+History.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DKDMessageContent+History.h"; path = "Classes/content/DKDMessageContent+History.h"; sourceTree = "<group>"; };
+		D2D520B3D6B0A7823966712C2E3E5A1D /* NSDate+MKM_Timestamp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+MKM_Timestamp.m"; path = "Classes/extends/NSDate+MKM_Timestamp.m"; sourceTree = "<group>"; };
+		D4D7A9D77C00A2026F6FDD6CFC3834D4 /* MKMRSAPublicKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMRSAPublicKey.h; path = Classes/crypto/MKMRSAPublicKey.h; sourceTree = "<group>"; };
+		D621ACE843593AB628B789AFDCEF2238 /* DKDMessageContent+Quote.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DKDMessageContent+Quote.h"; path = "Classes/content/DKDMessageContent+Quote.h"; sourceTree = "<group>"; };
+		D7EBA266C9EB766A4202A7FD8424A870 /* MKMRSAPrivateKey+PersistentStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKMRSAPrivateKey+PersistentStore.h"; path = "Classes/crypto/MKMRSAPrivateKey+PersistentStore.h"; sourceTree = "<group>"; };
+		D89BC27C6E7A3094377A62F941D31013 /* DKDMessageContent+Audio.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DKDMessageContent+Audio.m"; path = "Classes/content/DKDMessageContent+Audio.m"; sourceTree = "<group>"; };
+		E61775A5EC30B15F4A85E0C7A67B6939 /* MKMMember.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMMember.m; path = Classes/group/MKMMember.m; sourceTree = "<group>"; };
+		E663CE805974F96750EC46A05239C966 /* MingKeMing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MingKeMing.h; path = Classes/MingKeMing.h; sourceTree = "<group>"; };
+		EDCE11C5EB43F0EF2FEB4AAB9876C4A7 /* MKMString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMString.m; path = Classes/types/MKMString.m; sourceTree = "<group>"; };
+		F1E6EE16DE3687E2A281B7F0E2F53AAE /* MKMDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMDictionary.m; path = Classes/types/MKMDictionary.m; sourceTree = "<group>"; };
+		F332C0F1DC84ADA6141D233F9FF96F49 /* MKMSymmetricKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMSymmetricKey.h; path = Classes/crypto/MKMSymmetricKey.h; sourceTree = "<group>"; };
+		F93891A8ADBE669F293A72ACA43350F6 /* MKMContact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMContact.h; path = Classes/entity/MKMContact.h; sourceTree = "<group>"; };
+		FE33A27055731F54C673D7BD697E7619 /* MKMPublicKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMPublicKey.m; path = Classes/crypto/MKMPublicKey.m; sourceTree = "<group>"; };
+		FE5A22DC0A1C862C42E6D81B1361A49E /* Pods-DIMCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DIMCore-dummy.m"; sourceTree = "<group>"; };
+		FE60278C9E2513E0B0F8D3A7D49C95E4 /* DKDMessageContent+Image.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DKDMessageContent+Image.h"; path = "Classes/content/DKDMessageContent+Image.h"; sourceTree = "<group>"; };
+		FEB647231E3B4D4C9E8FDFE02C7E1A79 /* NSData+MKM_Crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+MKM_Crypto.h"; path = "Classes/extends/NSData+MKM_Crypto.h"; sourceTree = "<group>"; };
+		FF86B6111FF85062FD428DF397C2AD4C /* NSString+DKD_Encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+DKD_Encode.h"; path = "Classes/extends/NSString+DKD_Encode.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		006B4E094425DF24A5AC1534CF521B4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E9F8380CD22293A8E9DD47EC9EF0D07 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		236A7A7B6C5E80EFDDCADCFDA6786DAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		641DC843A7A0ADE531A62257000751C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C8FDEF47CE839D74670B56F4657543A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0115116FB7AE083818D043F571FCD167 /* DaoKeDao */ = {
+			isa = PBXGroup;
+			children = (
+				BE7181B5B895F0CEAEE69C0B33BE3DD4 /* DaoKeDao.h */,
+				26FBBE71BF934B4F32E1B6F29993AD4C /* extends */,
+				8BCDFCEC1B23300C6C30F5C45252215F /* message */,
+				B02D90484C730FAA761F2A6863542C44 /* Support Files */,
+				637C0FFA15E9F450AFC7D842D27E421D /* types */,
+			);
+			name = DaoKeDao;
+			path = DaoKeDao;
+			sourceTree = "<group>";
+		};
+		2410784F514D1E8A85D8AFC108A324CE /* types */ = {
+			isa = PBXGroup;
+			children = (
+				0ECE0CF6588F1A7C6B0B5DD010E137CC /* MKMDictionary.h */,
+				F1E6EE16DE3687E2A281B7F0E2F53AAE /* MKMDictionary.m */,
+				A30E3C60D4C0CCAB8D29194D3A9A9AA1 /* MKMString.h */,
+				EDCE11C5EB43F0EF2FEB4AAB9876C4A7 /* MKMString.m */,
+			);
+			name = types;
+			sourceTree = "<group>";
+		};
+		26FBBE71BF934B4F32E1B6F29993AD4C /* extends */ = {
+			isa = PBXGroup;
+			children = (
+				04856C52FE61200EE1D3DAD30CCD7A1A /* NSData+DKD_Encode.h */,
+				460F1CD41E3E9CBFDDD14084BD7D0F3E /* NSDate+DKD_Timestamp.h */,
+				226F01BF05EBEDC5E0ED371BB54BA7BD /* NSDate+DKD_Timestamp.m */,
+				0673C58A33112305E577CDC055CD462C /* NSObject+DKD_JSON.h */,
+				69741F65E562A623C6BFD738FD317C33 /* NSObject+DKD_JSON.m */,
+				FF86B6111FF85062FD428DF397C2AD4C /* NSString+DKD_Encode.h */,
+			);
+			name = extends;
+			sourceTree = "<group>";
+		};
+		2AFC815995762A76025779CA69AD0279 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0115116FB7AE083818D043F571FCD167 /* DaoKeDao */,
+				DDB93BD073087718A815F97447B1F8DB /* MingKeMing */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				547FE7BE59B73C045A10943A669A2D8C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		508618C689987EC5119BB25DC284FA42 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				03B12E1BD98F8177876D9016FAFFEFC9 /* MingKeMing.xcconfig */,
+				C71588CC01FFB8542DB2FFE168434EB8 /* MingKeMing-dummy.m */,
+				47B7272B8795A2371E39AFC30F277CBF /* MingKeMing-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MingKeMing";
+			sourceTree = "<group>";
+		};
+		547FE7BE59B73C045A10943A669A2D8C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC2E512ACD5CB722F7ADF14560309F /* Foundation.framework */,
+				7570261E6ACC7105B21202B26AE43D97 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		58BB117054881C8845A467EC8680E6CC /* Pods-DIMCore */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF4F78586A07237373A150448A6CBC /* Pods-DIMCore-acknowledgements.markdown */,
+				9EDDB8888FF0C7EAF5C27C276F1F6D74 /* Pods-DIMCore-acknowledgements.plist */,
+				FE5A22DC0A1C862C42E6D81B1361A49E /* Pods-DIMCore-dummy.m */,
+				4CFBF78999DF5BFA81FBF4A2F443737F /* Pods-DIMCore-resources.sh */,
+				7C2E89BAC257BEC1BE31AA5A10DDC55A /* Pods-DIMCore.debug.xcconfig */,
+				049FF5A57D3175AE02E3138E0E91AB29 /* Pods-DIMCore.release.xcconfig */,
+			);
+			name = "Pods-DIMCore";
+			path = "Target Support Files/Pods-DIMCore";
+			sourceTree = "<group>";
+		};
+		637C0FFA15E9F450AFC7D842D27E421D /* types */ = {
+			isa = PBXGroup;
+			children = (
+				3638B38B46741F0A88E892D023C186ED /* DKDDictionary.h */,
+				1EB315D321120AA751776BBF2A29DC1D /* DKDDictionary.m */,
+			);
+			name = types;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				2AFC815995762A76025779CA69AD0279 /* Pods */,
+				F8C3373D0EF7A7D3A3813CE0EFF543AF /* Products */,
+				828BA3C0A46B938BB1057A2EED0DBF29 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		828BA3C0A46B938BB1057A2EED0DBF29 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				58BB117054881C8845A467EC8680E6CC /* Pods-DIMCore */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8BCDFCEC1B23300C6C30F5C45252215F /* message */ = {
+			isa = PBXGroup;
+			children = (
+				AACD4732F2828D5030DAE7EBDE38BD08 /* DKDEnvelope.h */,
+				4950A1C3DF253B3D79F9245822333393 /* DKDEnvelope.m */,
+				5931A9743C38EF213F37200639D661F8 /* DKDInstantMessage.h */,
+				69339FA4AD9E83858C0AF47B38AC72A1 /* DKDInstantMessage.m */,
+				BE61A813C1A8DE246EDDE32C8D667925 /* DKDMessage.h */,
+				3F0CB5E92D03A02A96DECDBD5A6112C7 /* DKDMessage.m */,
+				C46BA6A4359599C663AAA3C7732879D4 /* DKDMessage+Transform.h */,
+				5522950F9EBB9A40669754961C339AED /* DKDMessage+Transform.m */,
+				1795F5D1E43398B8DFA1945A6D64C972 /* DKDMessageContent.h */,
+				C07356ADB4E67F52D4B14155CF419F08 /* DKDMessageContent.m */,
+				BEAAC6FD758FF0F33069B0BB31F818A6 /* DKDMessageContent+Audio.h */,
+				D89BC27C6E7A3094377A62F941D31013 /* DKDMessageContent+Audio.m */,
+				245EBE0B0DF5324E4FA71671E4498F26 /* DKDMessageContent+Command.h */,
+				7EDB2F43296B4F68DC05BC5B22C3AB78 /* DKDMessageContent+Command.m */,
+				C29A9C87FD859AA8D76C135551533116 /* DKDMessageContent+File.h */,
+				CB890F23A32EDEBAB707C1C48733A86B /* DKDMessageContent+File.m */,
+				40420705805A0A366088986F6A84D216 /* DKDMessageContent+Forward.h */,
+				326E071D51E84664593382BF4A28FBE8 /* DKDMessageContent+Forward.m */,
+				D2B2C2C9A837D1554D7FC834A988206C /* DKDMessageContent+History.h */,
+				8BA366597C69BDBA491F6F394B19A42F /* DKDMessageContent+History.m */,
+				FE60278C9E2513E0B0F8D3A7D49C95E4 /* DKDMessageContent+Image.h */,
+				43BE219FCD9CC5285E5F95713D7350E8 /* DKDMessageContent+Image.m */,
+				D621ACE843593AB628B789AFDCEF2238 /* DKDMessageContent+Quote.h */,
+				C7AA9457419E725CFFCCF2D0EB567C34 /* DKDMessageContent+Quote.m */,
+				BB1906620411A87523B8424DD9974E8D /* DKDMessageContent+Text.h */,
+				7D8038B699A31D7FD6705861D1E758CA /* DKDMessageContent+Text.m */,
+				BA82C38BDFB0DAEDC9CE8A7F7BBF654E /* DKDMessageContent+Video.h */,
+				9ABFC68B0265556187D267F57CA1F137 /* DKDMessageContent+Video.m */,
+				576A06FF4941231AC94A77A401640341 /* DKDMessageContent+Webpage.h */,
+				12DAC22C855A2637D0CCC882F0E8DB1F /* DKDMessageContent+Webpage.m */,
+				9ED2FB86236B9488CD1662F617690C19 /* DKDReliableMessage.h */,
+				221659A26F1C653DEAA6FF2332AD0B15 /* DKDReliableMessage.m */,
+				769143CCDBB1C5048F708A26C4819032 /* DKDSecureMessage.h */,
+				05529E8BD7E0D21392CE6E368AE34EDD /* DKDSecureMessage.m */,
+				838B7E5AD8E7C8BBABE7CDD89100594F /* DKDSecureMessage+Packing.h */,
+				939A5FD248E9858B7AAA6FFD0FE915F6 /* DKDSecureMessage+Packing.m */,
+			);
+			name = message;
+			sourceTree = "<group>";
+		};
+		8F39EE44F6DE1C96F38860D066A82524 /* group */ = {
+			isa = PBXGroup;
+			children = (
+				0539D72774097AB688D0AA3DC65F9702 /* MKMChatroom.h */,
+				8AECACD5367CC4EC4A60802999092118 /* MKMChatroom.m */,
+				68CCB2DA2598A6B6C0D6B203BA5C9BCE /* MKMGroup.h */,
+				6704BEBDD8717479092C810A65DD410F /* MKMGroup.m */,
+				3BFC5A1173CF003150E4DD4FAB656025 /* MKMMember.h */,
+				E61775A5EC30B15F4A85E0C7A67B6939 /* MKMMember.m */,
+				5D0F17A850EC23F09667E82857025558 /* MKMPolylogue.h */,
+				81ADFE7BDEE83416C05F44260315048B /* MKMPolylogue.m */,
+			);
+			name = group;
+			sourceTree = "<group>";
+		};
+		B011F4029BD178E5BACFDEF8840F0C4E /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				4CFF61DA2E33D685EEC00C0EDC4A3EA8 /* MKMAccount.h */,
+				39864AA85BA708A1C05D8FE25672671C /* MKMAccount.m */,
+				6D1F82EEF445C68187396E23687E6AD7 /* MKMAddress.h */,
+				C75086054BFD1606097D4E2C6DF3BE5B /* MKMAddress.m */,
+				F93891A8ADBE669F293A72ACA43350F6 /* MKMContact.h */,
+				387F65B09C86E6814B21EF1A1ED4CC0A /* MKMContact.m */,
+				2941D59A025741597C462FB90412DBFD /* MKMEntity.h */,
+				6A18E595AC92EF169E9ABF9BCDE575F0 /* MKMEntity.m */,
+				656102245882D01A3E71A098CA028826 /* MKMID.h */,
+				B6AFAF326F2E10E58B4F8217D774E2E3 /* MKMID.m */,
+				C82CC6F58BB13B884A94A2E63EEA0432 /* MKMMeta.h */,
+				0B49D7955FFBA9CD49CA7F408C8417E3 /* MKMMeta.m */,
+				D1ED7721A3D195AF1818A81F1C7E867C /* MKMUser.h */,
+				60A949309C106167BA8019C3C895A938 /* MKMUser.m */,
+			);
+			name = entity;
+			sourceTree = "<group>";
+		};
+		B02D90484C730FAA761F2A6863542C44 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B80B5760288A24E0E892EFDA735DA89 /* DaoKeDao.xcconfig */,
+				88B54AE1A4C4AA2F972525BA75AE584A /* DaoKeDao-dummy.m */,
+				C953FE7C301DDDD8D9F9DA508D8E5367 /* DaoKeDao-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DaoKeDao";
+			sourceTree = "<group>";
+		};
+		BC28CA69DBE39A4A9CEEC01C8B439E92 /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				31B4AAFD8B7687CBB96FBC3E92BD92BE /* MKMAESKey.h */,
+				2C9B11F4FB2343B2FE4057B33E700E71 /* MKMAESKey.m */,
+				B7815AFBD21AC605DFEA832CBE7BA4F9 /* MKMAsymmetricKey.h */,
+				B908FFDC2D6E3C64670792538570CB54 /* MKMAsymmetricKey.m */,
+				57F21515301CA5414DFF0826072DE519 /* MKMCryptographyKey.h */,
+				0C8B2D7E4E9B7A2055EAEC0126C675E3 /* MKMCryptographyKey.m */,
+				54FCDCC2BBB279156470C62DCAC60893 /* MKMPrivateKey.h */,
+				55F63F615C8118723C99A1E38F48B8B4 /* MKMPrivateKey.m */,
+				843995358D6A994D03F06C4B10D8E6A6 /* MKMPublicKey.h */,
+				FE33A27055731F54C673D7BD697E7619 /* MKMPublicKey.m */,
+				87021E2FE7307489929F589A8B15C907 /* MKMRSAKeyHelper.h */,
+				67C07C31A4897FD1D44F9187177E64F2 /* MKMRSAKeyHelper.m */,
+				5AECA102E4A7A328FC26223BA71FF703 /* MKMRSAPrivateKey.h */,
+				7F43F57AD293704B3C3F0C2039D0488D /* MKMRSAPrivateKey.m */,
+				D7EBA266C9EB766A4202A7FD8424A870 /* MKMRSAPrivateKey+PersistentStore.h */,
+				C2D21CF6A0226324BDF06D63DE16B3A3 /* MKMRSAPrivateKey+PersistentStore.m */,
+				D4D7A9D77C00A2026F6FDD6CFC3834D4 /* MKMRSAPublicKey.h */,
+				054B9257AC62ACB233C4B57E06C65575 /* MKMRSAPublicKey.m */,
+				F332C0F1DC84ADA6141D233F9FF96F49 /* MKMSymmetricKey.h */,
+				2F195E796FE38BCCE648F05639C70CC4 /* MKMSymmetricKey.m */,
+			);
+			name = crypto;
+			sourceTree = "<group>";
+		};
+		CB411AEB5BEB5A9F9AB475DCEFBE1F46 /* bitcoin */ = {
+			isa = PBXGroup;
+			children = (
+				574B55CA540B01A1468866CC9F628C86 /* base58.cpp */,
+				4F21BF33E1D9C29105916B71AD3B5393 /* base58.h */,
+				5EA40E3673BAA6140C94D2256FAB383A /* byteswap.h */,
+				C6D3C02D0137F90A469FC100B18186B1 /* common.h */,
+				9CECCAB887FDE0F3959B3F3388EC18DD /* endian.h */,
+				134F0008C3592B5E56A84A435B80AB2E /* ripemd160.cpp */,
+				4A5C3B84E2D81970CBFDCF23751F8588 /* ripemd160.h */,
+			);
+			name = bitcoin;
+			sourceTree = "<group>";
+		};
+		D66954F32B2A3FBD2B780D2AC79761B1 /* extends */ = {
+			isa = PBXGroup;
+			children = (
+				C802A4E535426F94F73453B4AF84D137 /* NSArray+MKM_Merkle.h */,
+				6ECBB720B8B1789F5CD62AED3A02FC2B /* NSArray+MKM_Merkle.m */,
+				FEB647231E3B4D4C9E8FDFE02C7E1A79 /* NSData+MKM_Crypto.h */,
+				C942AFF790BAF3F038CB5998E1DAA4F9 /* NSData+MKM_Crypto.mm */,
+				05EC9623A5ACAB40594A4249981755F9 /* NSDate+MKM_Timestamp.h */,
+				D2D520B3D6B0A7823966712C2E3E5A1D /* NSDate+MKM_Timestamp.m */,
+				3979C28B2E655BD4BBF14C968EA8E3B9 /* NSDictionary+MKM_Binary.h */,
+				BB13E15EFBEF9C4B5D7265FDB4ED3A0F /* NSDictionary+MKM_Binary.m */,
+				6EAD3E2E910A52A142D114B1EB31D72B /* NSObject+MKM_Compare.h */,
+				90EC20184BDE0C7D764F5B12808ACC39 /* NSObject+MKM_JSON.h */,
+				0D630B7EBEF2216EAE9B66A4E13AF0D4 /* NSObject+MKM_JSON.m */,
+				7B4E3867B0A7C52BFF20384C81D405DC /* NSString+MKM_Decode.h */,
+				8AE71E94BFEF635DBE7D09C98712D127 /* NSString+MKM_Decode.mm */,
+			);
+			name = extends;
+			sourceTree = "<group>";
+		};
+		DDB93BD073087718A815F97447B1F8DB /* MingKeMing */ = {
+			isa = PBXGroup;
+			children = (
+				E663CE805974F96750EC46A05239C966 /* MingKeMing.h */,
+				55FC40CF3EC5F77A826C0DE37DF57B62 /* MKMImmortals.h */,
+				5BE406F5620E4286604B9E6230F5A16D /* MKMImmortals.m */,
+				7D62C724BE445986C49A557E50E92302 /* MKMProfile.h */,
+				162151359B7DBF60EA5B43A21FD23C9A /* MKMProfile.m */,
+				CB411AEB5BEB5A9F9AB475DCEFBE1F46 /* bitcoin */,
+				BC28CA69DBE39A4A9CEEC01C8B439E92 /* crypto */,
+				B011F4029BD178E5BACFDEF8840F0C4E /* entity */,
+				D66954F32B2A3FBD2B780D2AC79761B1 /* extends */,
+				8F39EE44F6DE1C96F38860D066A82524 /* group */,
+				508618C689987EC5119BB25DC284FA42 /* Support Files */,
+				2410784F514D1E8A85D8AFC108A324CE /* types */,
+			);
+			name = MingKeMing;
+			path = MingKeMing;
+			sourceTree = "<group>";
+		};
+		F8C3373D0EF7A7D3A3813CE0EFF543AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABDEA88750DD15B36EB4BE99C2E27621 /* libDaoKeDao.a */,
+				55C7CA8950431A017E00B7A15D6430D0 /* libMingKeMing.a */,
+				89C4BB552FDD472C9C830F8426886C90 /* libPods-DIMCore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3F8E10580453CD3F42466CA668FD38DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57D0ADE59E308688D12AD0BCFF952A83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B08086ED5393C01FAB44F05ABE104 /* base58.h in Headers */,
+				4E513A1D36F7B04CDFD4D82E0FD49ED9 /* byteswap.h in Headers */,
+				80B1E108175B80043BB7DF36467BDCBC /* common.h in Headers */,
+				E57A2A7304BB29B2C28E20E80FD45920 /* endian.h in Headers */,
+				D5F7A53B8679205A6DFA6E786037E7B0 /* MingKeMing.h in Headers */,
+				FB62EC634D9AA3E9FB04CB0366B033EE /* MKMAccount.h in Headers */,
+				3AF918870CED7336F6C7DED5CEA7EB08 /* MKMAddress.h in Headers */,
+				C7622DF35CE79C978D20C684A5A314CB /* MKMAESKey.h in Headers */,
+				84CA78D76DF82810B6D3E0CC4FF40E01 /* MKMAsymmetricKey.h in Headers */,
+				798B90D5374B999861AD691A7092A102 /* MKMChatroom.h in Headers */,
+				A014E686266E09D89D5BFF5F92FE5930 /* MKMContact.h in Headers */,
+				B9ADA9EDD52F0F8D97FAF174F7B0B8CC /* MKMCryptographyKey.h in Headers */,
+				6700E580D7C1F99F451A1BE5971FC584 /* MKMDictionary.h in Headers */,
+				D9BD0A8D0DA349B8927B594D93391613 /* MKMEntity.h in Headers */,
+				C3DB306BE3B273DC5A4554BDBC2F2878 /* MKMGroup.h in Headers */,
+				BA06037EEB30AA2DC2C990A3B1D4A152 /* MKMID.h in Headers */,
+				18A2DFABB093507A47C540B5ED0E4877 /* MKMImmortals.h in Headers */,
+				7CF58534B78AA1A560EF8DBE57C88266 /* MKMMember.h in Headers */,
+				B0FEBB8B3C81AF3E06C070AC2D26F6AE /* MKMMeta.h in Headers */,
+				6D4E81EC6B5D5B274C783D35EB1BB2DD /* MKMPolylogue.h in Headers */,
+				203B5BC7B8BBFD453A963F6CF16C469B /* MKMPrivateKey.h in Headers */,
+				3CB77D2EA92F2AF284CA673AA92B3058 /* MKMProfile.h in Headers */,
+				F23D21387BDDE7C891FF64466637B42C /* MKMPublicKey.h in Headers */,
+				3267E0537A43F0190446E56219FEB1D5 /* MKMRSAKeyHelper.h in Headers */,
+				5B5595D2170B21C72839903D1723A3EB /* MKMRSAPrivateKey+PersistentStore.h in Headers */,
+				BF6A77CE43211F898A32DB480003DA71 /* MKMRSAPrivateKey.h in Headers */,
+				7ED97EDD48F4DB519F58CF498D2FBD3D /* MKMRSAPublicKey.h in Headers */,
+				393F586AE829E0C5540D3C3AA7B31186 /* MKMString.h in Headers */,
+				00B4A2717382626E9DFA6FC0F4FBFAC1 /* MKMSymmetricKey.h in Headers */,
+				F3EEC96F9246097D5A5A297D0B273272 /* MKMUser.h in Headers */,
+				3D380E4036CC5A4CA31B9DEA32E591F2 /* NSArray+MKM_Merkle.h in Headers */,
+				3ED0C5F6309422E5059A69AFA4092C87 /* NSData+MKM_Crypto.h in Headers */,
+				2121DAEFB76B8B8D99961388C8E84A3E /* NSDate+MKM_Timestamp.h in Headers */,
+				B4334AADA044DABC4C92C149613F0E8F /* NSDictionary+MKM_Binary.h in Headers */,
+				58D383538314CDB1B85F4714C32C7F55 /* NSObject+MKM_Compare.h in Headers */,
+				4811AD093E1FFE2D9E34424D218620B7 /* NSObject+MKM_JSON.h in Headers */,
+				69E9D8DB05010434AC9C215FF4BC4737 /* NSString+MKM_Decode.h in Headers */,
+				FD58409F7FE400DF30E15CEC7557BD69 /* ripemd160.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A523F030A637CB9253F8BC6A2A960DC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7354EA13F745276394BDC2BF1D601615 /* DaoKeDao.h in Headers */,
+				C819DA949C131B0CA716B1304C36A89C /* DKDDictionary.h in Headers */,
+				45A87B28BBE79DB19E3E3436D743368C /* DKDEnvelope.h in Headers */,
+				946FE36C6849002986793079247CDBE9 /* DKDInstantMessage.h in Headers */,
+				9E7422F684EAA5E48790612A450B2939 /* DKDMessage+Transform.h in Headers */,
+				006CA13BDB4DABE5BE0A2AA220051DC1 /* DKDMessage.h in Headers */,
+				2E3E658B0781FE10C8023FCCF5EB2A0E /* DKDMessageContent+Audio.h in Headers */,
+				F4945259AFB239E1E345FD2507FB4810 /* DKDMessageContent+Command.h in Headers */,
+				6B3161809F03CA6BEC6FE75552A28FBC /* DKDMessageContent+File.h in Headers */,
+				15B9AFDFB4DB7BB45362358ACD4C4A7E /* DKDMessageContent+Forward.h in Headers */,
+				9093F60BDCDAA53690F1BC32EC9491DF /* DKDMessageContent+History.h in Headers */,
+				4EEE66F01F23B380E8BF23AD1BA24850 /* DKDMessageContent+Image.h in Headers */,
+				3896573D97F66C3B0072AE4040226FE7 /* DKDMessageContent+Quote.h in Headers */,
+				CF600ECC95BFEF5502D4DC8A7677F9DB /* DKDMessageContent+Text.h in Headers */,
+				C8DCBE9D21F11B104E3632AB54991D16 /* DKDMessageContent+Video.h in Headers */,
+				F0554100AC7D3C80AF6D965BCA3FE0FD /* DKDMessageContent+Webpage.h in Headers */,
+				81DCC81FC8B81DA718C4D418E61969DE /* DKDMessageContent.h in Headers */,
+				9CE1831BF065BA970ED6FF266D05A33C /* DKDReliableMessage.h in Headers */,
+				8A4481DA4C01FB251C9D4F87821D6248 /* DKDSecureMessage+Packing.h in Headers */,
+				F0401C4126C45EB3D627FB1ABF06565B /* DKDSecureMessage.h in Headers */,
+				6505EA1C55AE0F0FED92045302F01172 /* NSData+DKD_Encode.h in Headers */,
+				77B329E88F2EA6216AB6CBF4DBF693BA /* NSDate+DKD_Timestamp.h in Headers */,
+				D62E133C518B097065CAA4A829B763F9 /* NSObject+DKD_JSON.h in Headers */,
+				71A0F53A45142508FBD90C5EA40DE661 /* NSString+DKD_Encode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3A917B19CBDD761F1E8E7D8CA773F02F /* Pods-DIMCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8035233761F2DE558CFDFE70A941E16 /* Build configuration list for PBXNativeTarget "Pods-DIMCore" */;
+			buildPhases = (
+				3F8E10580453CD3F42466CA668FD38DB /* Headers */,
+				88CEFE7ABE3B66427D925001AE31B8D4 /* Sources */,
+				236A7A7B6C5E80EFDDCADCFDA6786DAF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A01A887DE30CF3A0098A4244638600EB /* PBXTargetDependency */,
+				E5F588875275DAF9A1610BD4E63F1069 /* PBXTargetDependency */,
+			);
+			name = "Pods-DIMCore";
+			productName = "Pods-DIMCore";
+			productReference = 89C4BB552FDD472C9C830F8426886C90 /* libPods-DIMCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		705D446B22D73FAA41B76306A35F63D2 /* MingKeMing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6F93B5A45647B9EB5D8F5D366FAD5F6 /* Build configuration list for PBXNativeTarget "MingKeMing" */;
+			buildPhases = (
+				57D0ADE59E308688D12AD0BCFF952A83 /* Headers */,
+				5EA46B69FC3722937DF3B4D71D042248 /* Sources */,
+				006B4E094425DF24A5AC1534CF521B4F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MingKeMing;
+			productName = MingKeMing;
+			productReference = 55C7CA8950431A017E00B7A15D6430D0 /* libMingKeMing.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EA1B74D037FFE6ACB4C66CDA09DEF801 /* DaoKeDao */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F5382DFEDBCC340DB3E7CB6037D3485 /* Build configuration list for PBXNativeTarget "DaoKeDao" */;
+			buildPhases = (
+				A523F030A637CB9253F8BC6A2A960DC9 /* Headers */,
+				203050C7F395AC53F43ECBA7A48C4FB1 /* Sources */,
+				641DC843A7A0ADE531A62257000751C8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaoKeDao;
+			productName = DaoKeDao;
+			productReference = ABDEA88750DD15B36EB4BE99C2E27621 /* libDaoKeDao.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F8C3373D0EF7A7D3A3813CE0EFF543AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA1B74D037FFE6ACB4C66CDA09DEF801 /* DaoKeDao */,
+				705D446B22D73FAA41B76306A35F63D2 /* MingKeMing */,
+				3A917B19CBDD761F1E8E7D8CA773F02F /* Pods-DIMCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		203050C7F395AC53F43ECBA7A48C4FB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6232025FCB1B1B7FC44CAE3FDA4D1732 /* DaoKeDao-dummy.m in Sources */,
+				061910C912720435C54C07FC3560BCFB /* DKDDictionary.m in Sources */,
+				1907D591E5D9D0B5DEC5E92AF8595C74 /* DKDEnvelope.m in Sources */,
+				98E82CF37EAE58A7010498F57C4049BB /* DKDInstantMessage.m in Sources */,
+				A2D9EE33200E95F9D36E4B047DCE5BCE /* DKDMessage+Transform.m in Sources */,
+				FEFD75D9845E4A1487CB1EFC354A0A67 /* DKDMessage.m in Sources */,
+				A94F61D0FE4B88B78EE227C59B8D1C24 /* DKDMessageContent+Audio.m in Sources */,
+				222A5746A79F11E6A2A62B355C591A6C /* DKDMessageContent+Command.m in Sources */,
+				C5BF129D2A9F0058786738B4AA87DE15 /* DKDMessageContent+File.m in Sources */,
+				E784441FBCE99DD52A12C19EC7A9A040 /* DKDMessageContent+Forward.m in Sources */,
+				DECBD89E53F0783EBB639206F47052C1 /* DKDMessageContent+History.m in Sources */,
+				EC50576519B084320E18C8E50FE48E12 /* DKDMessageContent+Image.m in Sources */,
+				37D2EC6373630A0A86FD280D97BCC747 /* DKDMessageContent+Quote.m in Sources */,
+				84275BB6CA0F7C89C58E2B1174741F73 /* DKDMessageContent+Text.m in Sources */,
+				102A3563EF7A4D03D81DC25EAC9A82C7 /* DKDMessageContent+Video.m in Sources */,
+				B43C19405FB41E4D1E0C746BD0123B20 /* DKDMessageContent+Webpage.m in Sources */,
+				3779606043AEEE502CA10EE2C08D7FA0 /* DKDMessageContent.m in Sources */,
+				20AED0B605F44A895A8C26B2D3F1E376 /* DKDReliableMessage.m in Sources */,
+				7ECFA9ED06512D60C04BF87603254810 /* DKDSecureMessage+Packing.m in Sources */,
+				32BB464EBFE31CEB5F486B4D761E2207 /* DKDSecureMessage.m in Sources */,
+				4ED5A13DF41D7C36D2911C3BD7084676 /* NSDate+DKD_Timestamp.m in Sources */,
+				472915E3367E9475782727037A03587E /* NSObject+DKD_JSON.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA46B69FC3722937DF3B4D71D042248 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DFD0E40A4BB524AA788977E16C803F4 /* base58.cpp in Sources */,
+				A66BA9D69B3A30CFAF4063F6FF6446A6 /* MingKeMing-dummy.m in Sources */,
+				4CCEFF2A2443C2108993708466B3087B /* MKMAccount.m in Sources */,
+				C7927ADC3332F1C44EA257945BCC2197 /* MKMAddress.m in Sources */,
+				AA2F0FD0EF19A06046A28792B7A4CE93 /* MKMAESKey.m in Sources */,
+				610A204CF3BEEF17F38BFAB3D63B1D82 /* MKMAsymmetricKey.m in Sources */,
+				1C3531E3B8EC492EBA398F299FB4D688 /* MKMChatroom.m in Sources */,
+				B5870A5D3A18120409F59F42828D458A /* MKMContact.m in Sources */,
+				A81CA34D2E61FBABE32BB68DB506E462 /* MKMCryptographyKey.m in Sources */,
+				9A770DC34A00E6B449726FA197B651B7 /* MKMDictionary.m in Sources */,
+				93C1A71C77C17DE6634D3238E305FA0F /* MKMEntity.m in Sources */,
+				0E1AF40A31066336570205C2A521CD37 /* MKMGroup.m in Sources */,
+				75A373E53FE44A3D253749C97B738E6E /* MKMID.m in Sources */,
+				0ADBBBCC780DCBD7D14A28CB3E835DC8 /* MKMImmortals.m in Sources */,
+				4932AB2B41452AC9AE19B4FD70D96EC8 /* MKMMember.m in Sources */,
+				F46218994261F144901A98F545F6B62B /* MKMMeta.m in Sources */,
+				CF1CF8DF6EB51487FC1815124186BAC6 /* MKMPolylogue.m in Sources */,
+				0C49755EF5788A7C8BD0ADD9B59066AF /* MKMPrivateKey.m in Sources */,
+				91B3464715D2E7C3C54DB07F547C6D90 /* MKMProfile.m in Sources */,
+				06BE68524E62CA9DEEAD8CE1875583AA /* MKMPublicKey.m in Sources */,
+				BA5CC03800C83DEFF05882146C86F7AF /* MKMRSAKeyHelper.m in Sources */,
+				9C01B3723C8E987C473CBAB073F3A97B /* MKMRSAPrivateKey+PersistentStore.m in Sources */,
+				F77FBFA513C979B4F739F3C1A0FB0178 /* MKMRSAPrivateKey.m in Sources */,
+				EBE9B8540917AE70BF4C2ADF6765847E /* MKMRSAPublicKey.m in Sources */,
+				8974DA1DD23E76F756DEF8B559B90F61 /* MKMString.m in Sources */,
+				014367BC0D37D47F9972FE395F551947 /* MKMSymmetricKey.m in Sources */,
+				D40ECE8B1D26A727F44564C995273C31 /* MKMUser.m in Sources */,
+				2225C32F408CAE99EA27C0231DE6D7EA /* NSArray+MKM_Merkle.m in Sources */,
+				006C20FF4764518DB58B8041B1370BD9 /* NSData+MKM_Crypto.mm in Sources */,
+				E7B313AD8496A4E00C6CE6EF1FC325A1 /* NSDate+MKM_Timestamp.m in Sources */,
+				DFBABDC74EB78D6862B5B7289705EC5B /* NSDictionary+MKM_Binary.m in Sources */,
+				EE05D90759BEFC63DE9FCE8E2A0369A0 /* NSObject+MKM_JSON.m in Sources */,
+				A4703CFFDD1E158C93F861F534F78BA9 /* NSString+MKM_Decode.mm in Sources */,
+				07619E15C4785CCE4DAEBC1DBA33AA98 /* ripemd160.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88CEFE7ABE3B66427D925001AE31B8D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073F031A82C8490694EFFDBCD2B52F2E /* Pods-DIMCore-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A01A887DE30CF3A0098A4244638600EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DaoKeDao;
+			target = EA1B74D037FFE6ACB4C66CDA09DEF801 /* DaoKeDao */;
+			targetProxy = 858F525A46419B1F2B990F7F22EBCC10 /* PBXContainerItemProxy */;
+		};
+		E5F588875275DAF9A1610BD4E63F1069 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MingKeMing;
+			target = 705D446B22D73FAA41B76306A35F63D2 /* MingKeMing */;
+			targetProxy = 456C54095E073401DC55C104E1871453 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		19651C19DED1368B6A9B6EAAC7D6C0E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049FF5A57D3175AE02E3138E0E91AB29 /* Pods-DIMCore.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2644611419E9C724F0EC8030E1CE7186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B80B5760288A24E0E892EFDA735DA89 /* DaoKeDao.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/DaoKeDao/DaoKeDao-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = DaoKeDao;
+				PRODUCT_NAME = DaoKeDao;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		407B1A83E5B19D84C7110805B5FD8EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B12E1BD98F8177876D9016FAFFEFC9 /* MingKeMing.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MingKeMing/MingKeMing-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MingKeMing;
+				PRODUCT_NAME = MingKeMing;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71BDC2EF0F6CE6004472190F88C98195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C2E89BAC257BEC1BE31AA5A10DDC55A /* Pods-DIMCore.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B10178357735A557BACF1FBBD3450BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B80B5760288A24E0E892EFDA735DA89 /* DaoKeDao.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/DaoKeDao/DaoKeDao-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = DaoKeDao;
+				PRODUCT_NAME = DaoKeDao;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B56521D35D26D066110F1D38881A335A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B12E1BD98F8177876D9016FAFFEFC9 /* MingKeMing.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MingKeMing/MingKeMing-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MingKeMing;
+				PRODUCT_NAME = MingKeMing;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */,
+				B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F5382DFEDBCC340DB3E7CB6037D3485 /* Build configuration list for PBXNativeTarget "DaoKeDao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10178357735A557BACF1FBBD3450BDE /* Debug */,
+				2644611419E9C724F0EC8030E1CE7186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8035233761F2DE558CFDFE70A941E16 /* Build configuration list for PBXNativeTarget "Pods-DIMCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BDC2EF0F6CE6004472190F88C98195 /* Debug */,
+				19651C19DED1368B6A9B6EAAC7D6C0E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6F93B5A45647B9EB5D8F5D366FAD5F6 /* Build configuration list for PBXNativeTarget "MingKeMing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407B1A83E5B19D84C7110805B5FD8EB2 /* Debug */,
+				B56521D35D26D066110F1D38881A335A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

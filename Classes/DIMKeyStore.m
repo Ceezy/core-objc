@@ -7,7 +7,7 @@
 //
 
 #import "NSObject+Singleton.h"
-#import "NSObject+JsON.h"
+#import "NSObject+MKM_JSON.h"
 
 #import "DIMKeyStore+CacheFile.h"
 
@@ -152,7 +152,7 @@ SingletonImplementations(DIMKeyStore, sharedInstance)
 - (NSData *)privateKeyStoredForUser:(const DIMUser *)user
                          passphrase:(const DIMSymmetricKey *)scKey {
     DIMPrivateKey *SK = [user privateKey];
-    NSData *data = [SK jsonData];
+    NSData *data = [SK mkm_jsonData];
     return [scKey encrypt:data];
 }
 

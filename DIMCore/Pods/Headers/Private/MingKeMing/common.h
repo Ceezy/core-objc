@@ -1,0 +1,1 @@
+../../../MingKeMing/Classes/bitcoin/src/crypto/common.h

@@ -1,0 +1,1 @@
+../../../MingKeMing/Classes/group/MKMMember.h

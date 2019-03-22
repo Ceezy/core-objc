@@ -6,10 +6,10 @@
 //  Copyright © 2018 DIM Group. All rights reserved.
 //
 
-#import "NSObject+JsON.h"
-#import "NSData+Crypto.h"
-#import "NSString+Crypto.h"
-#import "NSArray+Merkle.h"
+#import "NSObject+MKM_JSON.h"
+#import "NSData+MKM_Crypto.h"
+#import "NSString+MKM_Decode.h"
+#import "NSArray+MKM_Merkle.h"
 
 #import "DIMHistoryTransaction.h"
 
@@ -24,7 +24,7 @@ static inline NSMutableArray *json_array(const NSArray *events) {
         if ([item isKindOfClass:[NSString class]]) {
             string = item;
         } else {
-            string = [item jsonString];
+            string = [item mkm_jsonString];
         }
         [mArray addObject:string];
     }
@@ -99,13 +99,13 @@ static inline NSMutableArray *json_array(const NSArray *events) {
     // merkle
     if (hash) {
         NSAssert(CT, @"signature of hash cannot be empty");
-        [mDict setObject:[hash base64Encode] forKey:@"merkle"];
+        [mDict setObject:[hash mkm_base64Encode] forKey:@"merkle"];
     }
     
     // signature
     if (CT) {
         NSAssert(hash, @"hash to be signed cannot be empty");
-        [mDict setObject:[CT base64Encode] forKey:@"signature"];
+        [mDict setObject:[CT mkm_base64Encode] forKey:@"signature"];
     }
     
     // recorder
@@ -150,12 +150,12 @@ static inline NSMutableArray *json_array(const NSArray *events) {
     if (!_merkleRoot) {
         NSString *hash = [_storeDictionary objectForKey:@"merkle"];
         if (hash) {
-            _merkleRoot = [hash base64Decode];
+            _merkleRoot = [hash mkm_base64Decode];
         } else {
             // calculate merkle root for events
             NSArray *array = json_array(self.transactions);
-            _merkleRoot = [array merkleRoot];
-            [_storeDictionary setObject:[_merkleRoot base64Encode] forKey:@"merkle"];
+            _merkleRoot = [array mkm_merkleRoot];
+            [_storeDictionary setObject:[_merkleRoot mkm_base64Encode] forKey:@"merkle"];
         }
     }
     return _merkleRoot;
@@ -165,7 +165,7 @@ static inline NSMutableArray *json_array(const NSArray *events) {
     if (!_signature) {
         NSString *CT = [_storeDictionary objectForKey:@"signature"];
         if (CT) {
-            _signature = [CT base64Decode];
+            _signature = [CT mkm_base64Decode];
         } else {
             NSAssert(false, @"signature not set yet");
         }

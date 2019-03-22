@@ -6,7 +6,7 @@
 //  Copyright © 2018 DIM Group. All rights reserved.
 //
 
-#import "NSData+Crypto.h"
+#import "NSData+MKM_Crypto.h"
 
 #import "DIMHistoryOperation.h"
 #import "DIMHistoryTransaction.h"

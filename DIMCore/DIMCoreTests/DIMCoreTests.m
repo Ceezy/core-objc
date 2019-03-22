@@ -8,8 +8,6 @@
 
 #import <XCTest/XCTest.h>
 
-#import <DIMCore/DIMCore.h>
-
 @interface DIMCoreTests : XCTestCase
 
 @end
